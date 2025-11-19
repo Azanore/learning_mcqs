@@ -1,0 +1,41 @@
+export const springHibernateFlashcards = [
+  // Base - 50% (17 flashcards)
+  { id: "spring-hibernate-1", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce que Spring Framework ?", back: "Framework Java pour créer des applications d'entreprise avec injection de dépendances", needsReview: false },
+  { id: "spring-hibernate-2", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce que l'injection de dépendances ?", back: "Pattern où les dépendances sont fournies par un conteneur plutôt que créées manuellement", needsReview: false },
+  { id: "spring-hibernate-3", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce que Spring Boot ?", back: "Framework qui simplifie la configuration de Spring avec des conventions par défaut", needsReview: false },
+  { id: "spring-hibernate-4", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Component ?", back: "Marque une classe comme bean Spring géré par le conteneur", needsReview: false },
+  { id: "spring-hibernate-5", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Autowired ?", back: "Injecte automatiquement une dépendance par type", needsReview: false },
+  { id: "spring-hibernate-6", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce qu'un bean Spring ?", back: "Objet géré par le conteneur Spring (IoC container)", needsReview: false },
+  { id: "spring-hibernate-7", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @RestController ?", back: "Combine @Controller et @ResponseBody pour créer des API REST", needsReview: false },
+  { id: "spring-hibernate-8", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @RequestMapping ?", back: "Mappe une URL à une méthode de contrôleur", needsReview: false },
+  { id: "spring-hibernate-9", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce que Hibernate ?", back: "Framework ORM qui mappe les objets Java aux tables de base de données", needsReview: false },
+  { id: "spring-hibernate-10", deck: "Spring/Hibernate", difficulty: "Base", front: "Que signifie ORM ?", back: "Object-Relational Mapping - conversion entre objets et tables relationnelles", needsReview: false },
+  { id: "spring-hibernate-11", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Entity ?", back: "Marque une classe comme entité JPA mappée à une table", needsReview: false },
+  { id: "spring-hibernate-12", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Id ?", back: "Marque un champ comme clé primaire de l'entité", needsReview: false },
+  { id: "spring-hibernate-13", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Service ?", back: "Marque une classe comme service (logique métier) dans Spring", needsReview: false },
+  { id: "spring-hibernate-14", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Repository ?", back: "Marque une classe comme couche d'accès aux données (DAO)", needsReview: false },
+  { id: "spring-hibernate-15", deck: "Spring/Hibernate", difficulty: "Base", front: "Qu'est-ce que JPA ?", back: "Java Persistence API - spécification standard pour l'ORM en Java", needsReview: false },
+  { id: "spring-hibernate-16", deck: "Spring/Hibernate", difficulty: "Base", front: "Différence entre @GetMapping et @PostMapping ?", back: "@GetMapping pour GET HTTP. @PostMapping pour POST HTTP", needsReview: false },
+  { id: "spring-hibernate-17", deck: "Spring/Hibernate", difficulty: "Base", front: "Que fait l'annotation @Table ?", back: "Spécifie le nom de la table associée à une entité", needsReview: false },
+
+  // Junior - 35% (12 flashcards)
+  { id: "spring-hibernate-18", deck: "Spring/Hibernate", difficulty: "Junior", front: "Différence entre @Component, @Service et @Repository ?", back: "Sémantique : @Component générique, @Service logique métier, @Repository accès données (+ gestion exceptions)", needsReview: false },
+  { id: "spring-hibernate-19", deck: "Spring/Hibernate", difficulty: "Junior", front: "Qu'est-ce que l'IoC (Inversion of Control) ?", back: "Principe où le contrôle de création et gestion des objets est délégué au framework", needsReview: false },
+  { id: "spring-hibernate-20", deck: "Spring/Hibernate", difficulty: "Junior", front: "Différence entre @Autowired et @Inject ?", back: "@Autowired est Spring. @Inject est standard Java (JSR-330). Fonctionnalité similaire", needsReview: false },
+  { id: "spring-hibernate-21", deck: "Spring/Hibernate", difficulty: "Junior", front: "Qu'est-ce qu'un scope de bean ?", back: "Cycle de vie d'un bean : singleton (défaut), prototype, request, session", needsReview: false },
+  { id: "spring-hibernate-22", deck: "Spring/Hibernate", difficulty: "Junior", front: "Que fait l'annotation @Transactional ?", back: "Gère automatiquement les transactions (commit/rollback) pour une méthode", needsReview: false },
+  { id: "spring-hibernate-23", deck: "Spring/Hibernate", difficulty: "Junior", front: "Qu'est-ce que Spring Data JPA ?", back: "Simplifie l'accès aux données en générant automatiquement les implémentations de repositories", needsReview: false },
+  { id: "spring-hibernate-24", deck: "Spring/Hibernate", difficulty: "Junior", front: "Différence entre save() et persist() ?", back: "save() retourne l'ID généré. persist() ne retourne rien (void)", needsReview: false },
+  { id: "spring-hibernate-25", deck: "Spring/Hibernate", difficulty: "Junior", front: "Qu'est-ce que le lazy loading ?", back: "Chargement différé des associations (fetch = LAZY) pour optimiser les performances", needsReview: false },
+  { id: "spring-hibernate-26", deck: "Spring/Hibernate", difficulty: "Junior", front: "Que fait l'annotation @OneToMany ?", back: "Définit une relation un-à-plusieurs entre entités", needsReview: false },
+  { id: "spring-hibernate-27", deck: "Spring/Hibernate", difficulty: "Junior", front: "Différence entre @PathVariable et @RequestParam ?", back: "@PathVariable extrait de l'URL (/user/{id}). @RequestParam extrait des query params (?id=1)", needsReview: false },
+  { id: "spring-hibernate-28", deck: "Spring/Hibernate", difficulty: "Junior", front: "Qu'est-ce qu'un DTO ?", back: "Data Transfer Object - objet pour transférer des données entre couches", needsReview: false },
+  { id: "spring-hibernate-29", deck: "Spring/Hibernate", difficulty: "Junior", front: "Que fait l'annotation @Configuration ?", back: "Marque une classe comme source de définitions de beans (@Bean)", needsReview: false },
+
+  // Intermédiaire - 15% (5 flashcards)
+  { id: "spring-hibernate-30", deck: "Spring/Hibernate", difficulty: "Intermédiaire", front: "Qu'est-ce que le N+1 problem ?", back: "Problème de performance : 1 requête + N requêtes supplémentaires pour les associations", needsReview: false },
+  { id: "spring-hibernate-31", deck: "Spring/Hibernate", difficulty: "Intermédiaire", front: "Différence entre fetch EAGER et LAZY ?", back: "EAGER charge immédiatement. LAZY charge à la demande (peut causer LazyInitializationException)", needsReview: false },
+  { id: "spring-hibernate-32", deck: "Spring/Hibernate", difficulty: "Intermédiaire", front: "Qu'est-ce que le cache de premier niveau ?", back: "Session cache automatique dans Hibernate (scope transaction)", needsReview: false },
+  { id: "spring-hibernate-33", deck: "Spring/Hibernate", difficulty: "Intermédiaire", front: "Que fait @EntityGraph ?", back: "Optimise le chargement des associations en spécifiant quelles relations charger", needsReview: false },
+  { id: "spring-hibernate-34", deck: "Spring/Hibernate", difficulty: "Intermédiaire", front: "Qu'est-ce qu'un AOP (Aspect-Oriented Programming) ?", back: "Programmation orientée aspect pour séparer les préoccupations transversales (logging, sécurité)", needsReview: false },
+];

@@ -138,7 +138,9 @@
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add PHP, Laravel, and Node.js/Express content - Task 4 complete" && git push origin master
   - _Requirements: 4.6_
-- [-] 5. Create Heavy topic content files (MySQL, MongoDB)
+- [x] 5. Create Heavy topic content files (MySQL, MongoDB)
+
+
 
 - [ ] 5. Create Heavy topic content files (MySQL, MongoDB)
 
@@ -160,30 +162,37 @@
   - Focus on documents, collections, queries, aggregation, indexes, schema design
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [-] 5.3 Wire MySQL, MongoDB to app and commit
+- [x] 5.3 Wire MySQL, MongoDB to app and commit
+
 
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add MySQL and MongoDB content - Task 5 complete" && git push origin master
   - _Requirements: 4.6_
+-
 
 - [ ] 6. Create Medium topic content files (Java/JEE, Spring/Hibernate)
 
-- [ ] 6.1 Create Java/JEE flashcards and MCQs
+- [x] 6.1 Create Java/JEE flashcards and MCQs
+
+
   - Create src/data/flashcards/java-jee.js with 30-35 flashcards
   - Create src/data/mcqs/java-jee.js with 20-22 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on Java syntax, OOP, collections, exceptions, JEE basics
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 6.2 Create Spring/Hibernate flashcards and MCQs
+- [x] 6.2 Create Spring/Hibernate flashcards and MCQs
+
+
   - Create src/data/flashcards/spring-hibernate.js with 30-35 flashcards
   - Create src/data/mcqs/spring-hibernate.js with 20-22 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on dependency injection, Spring Boot, annotations, Hibernate ORM, JPA
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 6.3 Wire Java/JEE, Spring/Hibernate to app and commit
+- [-] 6.3 Wire Java/JEE, Spring/Hibernate to app and commit
+
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add Java/JEE and Spring/Hibernate content - Task 6 complete" && git push origin master

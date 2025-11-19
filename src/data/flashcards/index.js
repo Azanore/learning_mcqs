@@ -13,6 +13,8 @@ import { laravelFlashcards } from './laravel';
 import { nodejsExpressFlashcards } from './nodejs-express';
 import { mysqlFlashcards } from './mysql';
 import { mongodbFlashcards } from './mongodb';
+import { javaJeeFlashcards } from './java-jee';
+import { springHibernateFlashcards } from './spring-hibernate';
 
 export const flashcards = [
   ...reactFlashcards,
@@ -30,4 +32,6 @@ export const flashcards = [
   ...nodejsExpressFlashcards,
   ...mysqlFlashcards,
   ...mongodbFlashcards,
+  ...javaJeeFlashcards,
+  ...springHibernateFlashcards,
 ];

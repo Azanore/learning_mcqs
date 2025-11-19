@@ -13,6 +13,8 @@ import { laravelMCQs } from './laravel';
 import { nodejsExpressMCQs } from './nodejs-express';
 import { mysqlMCQs } from './mysql';
 import { mongodbMCQs } from './mongodb';
+import { javaJeeMCQs } from './java-jee';
+import { springHibernateMCQs } from './spring-hibernate';
 
 export const mcqs = [
   ...reactMCQs,
@@ -30,4 +32,6 @@ export const mcqs = [
   ...nodejsExpressMCQs,
   ...mysqlMCQs,
   ...mongodbMCQs,
+  ...javaJeeMCQs,
+  ...springHibernateMCQs,
 ];

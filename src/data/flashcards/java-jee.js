@@ -1,0 +1,41 @@
+export const javaJeeFlashcards = [
+  // Base - 50% (17 flashcards)
+  { id: "java-jee-1", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce que la JVM ?", back: "Java Virtual Machine - exécute le bytecode Java sur n'importe quelle plateforme", needsReview: false },
+  { id: "java-jee-2", deck: "Java/JEE", difficulty: "Base", front: "Différence entre JDK et JRE ?", back: "JDK = outils de développement + JRE. JRE = environnement d'exécution uniquement", needsReview: false },
+  { id: "java-jee-3", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'une classe en Java ?", back: "Un modèle (template) qui définit les propriétés et comportements d'objets", needsReview: false },
+  { id: "java-jee-4", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'un objet en Java ?", back: "Une instance d'une classe avec ses propres valeurs d'attributs", needsReview: false },
+  { id: "java-jee-5", deck: "Java/JEE", difficulty: "Base", front: "Que signifie public static void main ?", back: "Point d'entrée : public (accessible), static (sans instance), void (pas de retour)", needsReview: false },
+  { id: "java-jee-6", deck: "Java/JEE", difficulty: "Base", front: "Différence entre int et Integer ?", back: "int = type primitif. Integer = classe wrapper (objet)", needsReview: false },
+  { id: "java-jee-7", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce que l'héritage en Java ?", back: "Mécanisme où une classe enfant hérite des propriétés et méthodes d'une classe parent", needsReview: false },
+  { id: "java-jee-8", deck: "Java/JEE", difficulty: "Base", front: "Mot-clé pour hériter d'une classe ?", back: "extends pour les classes, implements pour les interfaces", needsReview: false },
+  { id: "java-jee-9", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'une interface en Java ?", back: "Contrat définissant des méthodes abstraites que les classes doivent implémenter", needsReview: false },
+  { id: "java-jee-10", deck: "Java/JEE", difficulty: "Base", front: "Différence entre == et equals() ?", back: "== compare les références. equals() compare le contenu des objets", needsReview: false },
+  { id: "java-jee-11", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'un constructeur ?", back: "Méthode spéciale appelée lors de la création d'un objet pour l'initialiser", needsReview: false },
+  { id: "java-jee-12", deck: "Java/JEE", difficulty: "Base", front: "Que fait le mot-clé final ?", back: "Rend une variable constante, une méthode non-overridable, ou une classe non-héritée", needsReview: false },
+  { id: "java-jee-13", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'une exception ?", back: "Événement qui interrompt le flux normal d'exécution du programme", needsReview: false },
+  { id: "java-jee-14", deck: "Java/JEE", difficulty: "Base", front: "Différence entre throw et throws ?", back: "throw lance une exception. throws déclare qu'une méthode peut lancer une exception", needsReview: false },
+  { id: "java-jee-15", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'un package en Java ?", back: "Namespace pour organiser les classes et éviter les conflits de noms", needsReview: false },
+  { id: "java-jee-16", deck: "Java/JEE", difficulty: "Base", front: "Que fait System.out.println() ?", back: "Affiche du texte dans la console avec un retour à la ligne", needsReview: false },
+  { id: "java-jee-17", deck: "Java/JEE", difficulty: "Base", front: "Qu'est-ce qu'un String en Java ?", back: "Objet immuable représentant une séquence de caractères", needsReview: false },
+
+  // Junior - 35% (12 flashcards)
+  { id: "java-jee-18", deck: "Java/JEE", difficulty: "Junior", front: "Différence entre ArrayList et LinkedList ?", back: "ArrayList = tableau dynamique (accès rapide). LinkedList = liste chaînée (insertion/suppression rapides)", needsReview: false },
+  { id: "java-jee-19", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce que le polymorphisme ?", back: "Capacité d'un objet à prendre plusieurs formes (overloading et overriding)", needsReview: false },
+  { id: "java-jee-20", deck: "Java/JEE", difficulty: "Junior", front: "Différence entre abstract class et interface ?", back: "Abstract class peut avoir des méthodes concrètes et un état. Interface = contrat pur (Java 8+ permet default methods)", needsReview: false },
+  { id: "java-jee-21", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce que l'encapsulation ?", back: "Masquer les détails internes en utilisant private et exposer via getters/setters", needsReview: false },
+  { id: "java-jee-22", deck: "Java/JEE", difficulty: "Junior", front: "Différence entre HashMap et Hashtable ?", back: "HashMap non-synchronisé (plus rapide), accepte null. Hashtable synchronisé, pas de null", needsReview: false },
+  { id: "java-jee-23", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce qu'une lambda expression ?", back: "Fonction anonyme concise introduite en Java 8 : (params) -> expression", needsReview: false },
+  { id: "java-jee-24", deck: "Java/JEE", difficulty: "Junior", front: "Que fait le mot-clé static ?", back: "Rend un membre appartenant à la classe plutôt qu'à une instance", needsReview: false },
+  { id: "java-jee-25", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce qu'un Stream en Java 8 ?", back: "API pour traiter des collections de manière fonctionnelle (filter, map, reduce)", needsReview: false },
+  { id: "java-jee-26", deck: "Java/JEE", difficulty: "Junior", front: "Différence entre checked et unchecked exceptions ?", back: "Checked = vérifiées à la compilation (IOException). Unchecked = runtime (NullPointerException)", needsReview: false },
+  { id: "java-jee-27", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce que le garbage collector ?", back: "Mécanisme automatique qui libère la mémoire des objets non référencés", needsReview: false },
+  { id: "java-jee-28", deck: "Java/JEE", difficulty: "Junior", front: "Que fait le mot-clé synchronized ?", back: "Assure qu'un seul thread peut exécuter un bloc de code à la fois", needsReview: false },
+  { id: "java-jee-29", deck: "Java/JEE", difficulty: "Junior", front: "Qu'est-ce qu'une annotation en Java ?", back: "Métadonnée ajoutée au code pour fournir des informations au compilateur ou au runtime (@Override, @Deprecated)", needsReview: false },
+
+  // Intermédiaire - 15% (5 flashcards)
+  { id: "java-jee-30", deck: "Java/JEE", difficulty: "Intermédiaire", front: "Qu'est-ce qu'un Servlet ?", back: "Classe Java côté serveur qui gère les requêtes HTTP et génère des réponses dynamiques", needsReview: false },
+  { id: "java-jee-31", deck: "Java/JEE", difficulty: "Intermédiaire", front: "Différence entre forward et redirect ?", back: "forward = côté serveur (même requête). redirect = côté client (nouvelle requête)", needsReview: false },
+  { id: "java-jee-32", deck: "Java/JEE", difficulty: "Intermédiaire", front: "Qu'est-ce que JSP ?", back: "JavaServer Pages - technologie pour créer des pages web dynamiques avec du code Java embarqué", needsReview: false },
+  { id: "java-jee-33", deck: "Java/JEE", difficulty: "Intermédiaire", front: "Qu'est-ce qu'un EJB ?", back: "Enterprise JavaBean - composant serveur pour la logique métier dans les applications JEE", needsReview: false },
+  { id: "java-jee-34", deck: "Java/JEE", difficulty: "Intermédiaire", front: "Qu'est-ce que JNDI ?", back: "Java Naming and Directory Interface - API pour accéder aux services d'annuaire et ressources", needsReview: false },
+];

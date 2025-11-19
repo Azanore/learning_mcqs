@@ -8,6 +8,9 @@ import { gitMCQs } from './git';
 import { databaseMCQs } from './databases';
 import { backendMCQs } from './backend';
 import { devopsMCQs } from './devops';
+import { phpMCQs } from './php';
+import { laravelMCQs } from './laravel';
+import { nodejsExpressMCQs } from './nodejs-express';
 
 export const mcqs = [
   ...reactMCQs,
@@ -20,4 +23,7 @@ export const mcqs = [
   ...databaseMCQs,
   ...backendMCQs,
   ...devopsMCQs,
+  ...phpMCQs,
+  ...laravelMCQs,
+  ...nodejsExpressMCQs,
 ];

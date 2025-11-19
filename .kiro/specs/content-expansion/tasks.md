@@ -99,35 +99,45 @@
   - Run git add . && git commit -m "feat: Add HTML, CSS, and Bootstrap content" && git push origin master
   - _Requirements: 4.6_
 
-- [ ] 4. Create Heavy topic content files (PHP, Laravel, Node.js/Express)
-- [ ] 4.1 Create PHP flashcards and MCQs
+- [-] 4. Create Heavy topic content files (PHP, Laravel, Node.js/Express)
+
+
+- [x] 4.1 Create PHP flashcards and MCQs
+
+
   - Create src/data/flashcards/php.js with 40-50 flashcards
   - Create src/data/mcqs/php.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on syntax, arrays, functions, OOP, superglobals, common functions
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 4.2 Create Laravel flashcards and MCQs
+- [x] 4.2 Create Laravel flashcards and MCQs
+
+
   - Create src/data/flashcards/laravel.js with 40-50 flashcards
   - Create src/data/mcqs/laravel.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on routing, Eloquent ORM, middleware, Artisan, Blade templates
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 4.3 Create Node.js/Express flashcards and MCQs
+- [x] 4.3 Create Node.js/Express flashcards and MCQs
+
+
   - Create src/data/flashcards/nodejs-express.js with 40-50 flashcards
   - Create src/data/mcqs/nodejs-express.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on async/await, routing, middleware, npm, modules, REST APIs
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 4.4 Wire PHP, Laravel, Node.js/Express to app and commit
+- [-] 4.4 Wire PHP, Laravel, Node.js/Express to app and commit
+
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add PHP, Laravel, and Node.js/Express content - Task 4 complete" && git push origin master
   - _Requirements: 4.6_
 
 - [ ] 5. Create Heavy topic content files (MySQL, MongoDB)
+
 - [ ] 5.1 Create MySQL flashcards and MCQs
   - Create src/data/flashcards/mysql.js with 40-50 flashcards
   - Create src/data/mcqs/mysql.js with 30-40 MCQs
@@ -149,6 +159,7 @@
   - _Requirements: 4.6_
 
 - [ ] 6. Create Medium topic content files (Java/JEE, Spring/Hibernate)
+
 - [ ] 6.1 Create Java/JEE flashcards and MCQs
   - Create src/data/flashcards/java-jee.js with 30-35 flashcards
   - Create src/data/mcqs/java-jee.js with 20-22 MCQs
@@ -170,6 +181,7 @@
   - _Requirements: 4.6_
 
 - [ ] 7. Create Medium topic content files (Angular, jQuery)
+
 - [ ] 7.1 Create Angular flashcards and MCQs
   - Create src/data/flashcards/angular.js with 30-35 flashcards
   - Create src/data/mcqs/angular.js with 20-22 MCQs
@@ -191,6 +203,7 @@
   - _Requirements: 4.6_
 
 - [ ] 8. Create Grouped topic content files (Mobile, DevOps-tools)
+
 - [ ] 8.1 Create Mobile flashcards and MCQs
   - Create src/data/flashcards/mobile.js with 35-40 flashcards
   - Create src/data/mcqs/mobile.js with 22-25 MCQs
@@ -212,6 +225,7 @@
   - _Requirements: 4.6_
 
 - [ ] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
+
 - [ ] 9.1 Create Security-Networking flashcards and MCQs
   - Create src/data/flashcards/security-networking.js with 35-40 flashcards
   - Create src/data/mcqs/security-networking.js with 22-25 MCQs
@@ -233,6 +247,7 @@
   - _Requirements: 4.6_
 
 - [ ] 10. Update index files and remove deprecated content
+
 - [ ] 10.1 Remove deprecated content files
   - Delete src/data/flashcards/databases.js
   - Delete src/data/flashcards/backend.js
@@ -243,15 +258,18 @@
   - _Requirements: 4.7_
 
 - [ ] 10.2 Update index files to remove deprecated imports
+
   - Remove imports for databases.js, backend.js, devops.js from src/data/flashcards/index.js
   - Remove imports for databases.js, backend.js, devops.js from src/data/mcqs/index.js
   - _Requirements: 4.6_
 
 - [ ] 10.3 Commit cleanup changes
+
   - Run git add . && git commit -m "chore: Remove deprecated content files - Task 10 complete" && git push origin master
   - _Requirements: 4.6, 4.7_
 
 - [ ] 11. Expand keyword comparison maps
+
 - [ ] 11.1 Add frontend framework comparison maps
   - React vs Angular vs Vue (comprehensive comparison)
   - jQuery vs Vanilla JavaScript

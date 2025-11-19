@@ -1,6 +1,6 @@
 export const backendMCQs = [
   {
-    id: 22,
+    id: "nodejs-express-1",
     topic: "Node.js",
     difficulty: "Base",
     question: "Qu'est-ce que Express.js ?",
@@ -15,7 +15,7 @@ export const backendMCQs = [
     multiSelect: false
   },
   {
-    id: 23,
+    id: "nodejs-express-2",
     topic: "Node.js",
     difficulty: "Junior",
     question: "Quels sont des gestionnaires de paquets Node.js ?",
@@ -25,7 +25,7 @@ export const backendMCQs = [
     multiSelect: true
   },
   {
-    id: 24,
+    id: "nodejs-express-3",
     topic: "Node.js",
     difficulty: "Intermédiaire",
     question: "Que fait next() dans un middleware Express ?",
@@ -40,7 +40,7 @@ export const backendMCQs = [
     multiSelect: false
   },
   {
-    id: 25,
+    id: "laravel-1",
     topic: "Laravel",
     difficulty: "Base",
     question: "Qu'est-ce qu'Eloquent dans Laravel ?",
@@ -55,7 +55,7 @@ export const backendMCQs = [
     multiSelect: false
   },
   {
-    id: 26,
+    id: "laravel-2",
     topic: "Laravel",
     difficulty: "Junior",
     question: "Quels composants font partie du pattern MVC de Laravel ?",
@@ -65,7 +65,7 @@ export const backendMCQs = [
     multiSelect: true
   },
   {
-    id: 27,
+    id: "spring-hibernate-1",
     topic: "Spring Boot",
     difficulty: "Base",
     question: "À quoi sert l'annotation @RestController ?",
@@ -80,7 +80,7 @@ export const backendMCQs = [
     multiSelect: false
   },
   {
-    id: 28,
+    id: "spring-hibernate-2",
     topic: "Spring Boot",
     difficulty: "Junior",
     question: "Quelles annotations Spring Boot injectent des dépendances ?",

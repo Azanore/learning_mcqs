@@ -1,6 +1,6 @@
 export const devopsMCQs = [
   {
-    id: 29,
+    id: "devops-tools-1",
     topic: "Kubernetes",
     difficulty: "Base",
     question: "Quelle est la fonction principale de Kubernetes ?",
@@ -15,7 +15,7 @@ export const devopsMCQs = [
     multiSelect: false
   },
   {
-    id: 30,
+    id: "devops-tools-2",
     topic: "Kubernetes",
     difficulty: "Junior",
     question: "Quels objets Kubernetes gèrent les applications ?",

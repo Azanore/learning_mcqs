@@ -1,6 +1,6 @@
 export const databaseMCQs = [
   {
-    id: 17,
+    id: "mysql-1",
     topic: "MySQL",
     difficulty: "Junior",
     question: "Quel JOIN retourne toutes les lignes de la table de gauche ?",
@@ -10,7 +10,7 @@ export const databaseMCQs = [
     multiSelect: false
   },
   {
-    id: 18,
+    id: "mysql-2",
     topic: "MySQL",
     difficulty: "Base",
     question: "Quelles commandes SQL modifient des données ?",
@@ -20,7 +20,7 @@ export const databaseMCQs = [
     multiSelect: true
   },
   {
-    id: 19,
+    id: "mysql-3",
     topic: "MySQL",
     difficulty: "Intermédiaire",
     question: "Quelle est la différence entre WHERE et HAVING ?",
@@ -35,7 +35,7 @@ export const databaseMCQs = [
     multiSelect: false
   },
   {
-    id: 20,
+    id: "mongodb-1",
     topic: "MongoDB",
     difficulty: "Junior",
     question: "Quelles caractéristiques décrivent MongoDB ?",
@@ -50,7 +50,7 @@ export const databaseMCQs = [
     multiSelect: true
   },
   {
-    id: 21,
+    id: "mongodb-2",
     topic: "MongoDB",
     difficulty: "Base",
     question: "Quel format de données utilise MongoDB ?",

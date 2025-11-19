@@ -17,6 +17,8 @@ import { javaJeeFlashcards } from './java-jee';
 import { springHibernateFlashcards } from './spring-hibernate';
 import { angularFlashcards } from './angular';
 import { jqueryFlashcards } from './jquery';
+import { mobileFlashcards } from './mobile';
+import { devopsToolsFlashcards } from './devops-tools';
 
 export const flashcards = [
   ...reactFlashcards,
@@ -38,4 +40,6 @@ export const flashcards = [
   ...springHibernateFlashcards,
   ...angularFlashcards,
   ...jqueryFlashcards,
+  ...mobileFlashcards,
+  ...devopsToolsFlashcards,
 ];

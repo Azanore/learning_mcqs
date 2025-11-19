@@ -236,23 +236,30 @@
 
 
 
-- [ ] 8. Create Grouped topic content files (Mobile, DevOps-tools)
+- [-] 8. Create Grouped topic content files (Mobile, DevOps-tools)
 
-- [ ] 8.1 Create Mobile flashcards and MCQs
+
+
+- [x] 8.1 Create Mobile flashcards and MCQs
+
+
   - Create src/data/flashcards/mobile.js with 35-40 flashcards
   - Create src/data/mcqs/mobile.js with 22-25 MCQs
   - Follow 55% Base, 30% Junior, 15% Intermédiaire distribution
   - Cover Android/Kotlin (9-10 flashcards, 5-6 MCQs), iOS/Swift (9-10 flashcards, 5-6 MCQs), React Native (9-10 flashcards, 6-7 MCQs), Flutter/Dart (8-10 flashcards, 6-7 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.1, 6.5, 8.1-8.6_
 
-- [ ] 8.2 Create DevOps-tools flashcards and MCQs
+- [x] 8.2 Create DevOps-tools flashcards and MCQs
+
+
   - Create src/data/flashcards/devops-tools.js with 35-40 flashcards
   - Create src/data/mcqs/devops-tools.js with 22-25 MCQs
   - Follow 55% Base, 30% Junior, 15% Intermédiaire distribution
   - Cover Kubernetes (10-12 flashcards, 7-8 MCQs), Jenkins (8-10 flashcards, 5-6 MCQs), SonarQube (8-9 flashcards, 5-6 MCQs), RabbitMQ (9-10 flashcards, 5-6 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.2, 6.5, 8.1-8.6_
 
-- [ ] 8.3 Wire Mobile, DevOps-tools to app and commit
+- [-] 8.3 Wire Mobile, DevOps-tools to app and commit
+
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
 
@@ -261,6 +268,7 @@
 
 
 - [ ] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
+
 
 - [ ] 9.1 Create Security-Networking flashcards and MCQs
   - Create src/data/flashcards/security-networking.js with 35-40 flashcards
@@ -285,6 +293,7 @@ mentals to app and commit
   - _Requirements: 4.6_
 
 - [ ] 10. Update index files and remove deprecated content
+
 
 - [ ] 10.1 Remove deprecated content files
   - Delete src/data/flashcards/data
@@ -315,6 +324,7 @@ s/devops.js
   - _Requirements: 4.6, 4.7_
 
 - [ ] 11. Expand keyword comparison maps
+
 
 - [ ] 11.1 Add frontend framework comparison maps
   - React vs Angular vs Vue (comprehensive comparison)

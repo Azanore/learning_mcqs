@@ -17,6 +17,8 @@ import { javaJeeMCQs } from './java-jee';
 import { springHibernateMCQs } from './spring-hibernate';
 import { angularMCQs } from './angular';
 import { jqueryMCQs } from './jquery';
+import { mobileMCQs } from './mobile';
+import { devopsToolsMCQs } from './devops-tools';
 
 export const mcqs = [
   ...reactMCQs,
@@ -38,4 +40,6 @@ export const mcqs = [
   ...springHibernateMCQs,
   ...angularMCQs,
   ...jqueryMCQs,
+  ...mobileMCQs,
+  ...devopsToolsMCQs,
 ];

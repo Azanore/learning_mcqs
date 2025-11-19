@@ -201,7 +201,9 @@
   - Run git add . && git commit -m "feat: Add Java/JEE and Spring/Hibernate content - Task 6 complete" && git push origin master
   - _Requirements: 4.6_
 
-- [-] 7. Create Medium topic content files (Angular, jQuery)
+- [x] 7. Create Medium topic content files (Angular, jQuery)
+
+
 
 
 - [x] 7.1 Create Angular flashcards and MCQs
@@ -222,7 +224,8 @@
   - Focus on selectors, DOM manipulation, events, AJAX, common methods
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 7.3 Wire Angular, jQuery to app and commit
+- [x] 7.3 Wire Angular, jQuery to app and commit
+
 
 
   - Add imports to src/data/flashcards/index.js

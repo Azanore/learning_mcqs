@@ -5,13 +5,27 @@ import { flashcards as initialCards } from '../data/flashcards';
 export default function FlashcardsPage() {
   const [cards, setCards] = useState(initialCards);
   const [selectedTopic, setSelectedTopic] = useState('all');
+  const [selectedDifficulty, setSelectedDifficulty] = useState('all');
   const [showReviewOnly, setShowReviewOnly] = useState(false);
 
   const topics = ['all', ...new Set(cards.map(c => c.deck))];
 
-  const displayCards = showReviewOnly
-    ? cards.filter(c => c.needsReview)
-    : cards;
+  let displayCards = cards;
+
+  // Filter by topic
+  if (selectedTopic !== 'all') {
+    displayCards = displayCards.filter(c => c.deck === selectedTopic);
+  }
+
+  // Filter by difficulty
+  if (selectedDifficulty !== 'all') {
+    displayCards = displayCards.filter(c => c.difficulty.toLowerCase() === selectedDifficulty);
+  }
+
+  // Filter by review status
+  if (showReviewOnly) {
+    displayCards = displayCards.filter(c => c.needsReview);
+  }
 
   const handleToggleReview = (id) => {
     setCards(prev => prev.map(c =>
@@ -34,6 +48,33 @@ export default function FlashcardsPage() {
           ))}
         </select>
 
+        <div className="difficulty-filters">
+          <button
+            onClick={() => setSelectedDifficulty('all')}
+            className={`difficulty-filter-btn ${selectedDifficulty === 'all' ? 'active' : ''}`}
+          >
+            Tous
+          </button>
+          <button
+            onClick={() => setSelectedDifficulty('base')}
+            className={`difficulty-filter-btn base ${selectedDifficulty === 'base' ? 'active' : ''}`}
+          >
+            Base
+          </button>
+          <button
+            onClick={() => setSelectedDifficulty('junior')}
+            className={`difficulty-filter-btn junior ${selectedDifficulty === 'junior' ? 'active' : ''}`}
+          >
+            Junior
+          </button>
+          <button
+            onClick={() => setSelectedDifficulty('intermédiaire')}
+            className={`difficulty-filter-btn intermédiaire ${selectedDifficulty === 'intermédiaire' ? 'active' : ''}`}
+          >
+            Inter
+          </button>
+        </div>
+
         <label className="checkbox-label">
           <input
             type="checkbox"
@@ -46,7 +87,7 @@ export default function FlashcardsPage() {
 
       <FlashCard
         cards={displayCards}
-        topic={selectedTopic}
+        topic="all"
         onToggleReview={handleToggleReview}
       />
     </div>

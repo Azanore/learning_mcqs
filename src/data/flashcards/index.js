@@ -5,9 +5,6 @@ import { cssFlashcards } from './css';
 import { bootstrapFlashcards } from './bootstrap';
 import { dockerFlashcards } from './docker';
 import { gitFlashcards } from './git';
-import { databaseFlashcards } from './databases';
-import { backendFlashcards } from './backend';
-import { devopsFlashcards } from './devops';
 import { phpFlashcards } from './php';
 import { laravelFlashcards } from './laravel';
 import { nodejsExpressFlashcards } from './nodejs-express';
@@ -30,9 +27,6 @@ export const flashcards = [
   ...bootstrapFlashcards,
   ...dockerFlashcards,
   ...gitFlashcards,
-  ...databaseFlashcards,
-  ...backendFlashcards,
-  ...devopsFlashcards,
   ...phpFlashcards,
   ...laravelFlashcards,
   ...nodejsExpressFlashcards,

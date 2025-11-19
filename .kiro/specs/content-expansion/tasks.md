@@ -270,7 +270,9 @@
   --_Requirements: 4.6_
 
 
-- [-] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
+- [x] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
+
+
 
 
 
@@ -294,18 +296,23 @@
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.4, 6.5, 8.1-8.6_
 
 
-- [ ] 9.3 Wire Security-Networking, Funda
+- [x] 9.3 Wire Security-Networking, Funda
+
 
 mentals to app and commit
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add Security-Networking and Fundamentals content - Task 9 complete" && git push origin master
   - _Requirements: 4.6_
+-
 
-- [ ] 10. Update index files and remove deprecated content
+- [-] 10. Update index files and remove deprecated content
 
 
-- [ ] 10.1 Remove deprecated content files
+
+
+- [x] 10.1 Remove deprecated content files
+
   - Delete src/data/flashcards/data
 
 bases.js
@@ -327,6 +334,7 @@ s/devops.js
   - Remove imports for databases.js, backend.js, devops.js from src/data/flashcards/index.js
   - Remove imports for databases.js, backend.js, devops.js from src/data/mcqs/index.js
   - _Requirements: 4.6_
+
 
 - [ ] 10.3 Commit cleanup changes
 

@@ -171,7 +171,9 @@
   - _Requirements: 4.6_
 -
 
-- [ ] 6. Create Medium topic content files (Java/JEE, Spring/Hibernate)
+- [x] 6. Create Medium topic content files (Java/JEE, Spring/Hibernate)
+
+
 
 - [x] 6.1 Create Java/JEE flashcards and MCQs
 
@@ -191,23 +193,29 @@
   - Focus on dependency injection, Spring Boot, annotations, Hibernate ORM, JPA
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [-] 6.3 Wire Java/JEE, Spring/Hibernate to app and commit
+- [x] 6.3 Wire Java/JEE, Spring/Hibernate to app and commit
+
 
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add Java/JEE and Spring/Hibernate content - Task 6 complete" && git push origin master
   - _Requirements: 4.6_
 
-- [ ] 7. Create Medium topic content files (Angular, jQuery)
+- [-] 7. Create Medium topic content files (Angular, jQuery)
 
-- [ ] 7.1 Create Angular flashcards and MCQs
+
+- [x] 7.1 Create Angular flashcards and MCQs
+
+
   - Create src/data/flashcards/angular.js with 30-35 flashcards
   - Create src/data/mcqs/angular.js with 20-22 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on components, directives, services, TypeScript, lifecycle hooks, data binding
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 7.2 Create jQuery flashcards and MCQs
+- [x] 7.2 Create jQuery flashcards and MCQs
+
+
   - Create src/data/flashcards/jquery.js with 30-35 flashcards
   - Create src/data/mcqs/jquery.js with 20-22 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
@@ -215,10 +223,15 @@
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
 - [ ] 7.3 Wire Angular, jQuery to app and commit
+
+
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add Angular and jQuery content - Task 7 complete" && git push origin master
   - _Requirements: 4.6_
+-
+
+
 
 - [ ] 8. Create Grouped topic content files (Mobile, DevOps-tools)
 
@@ -239,8 +252,10 @@
 - [ ] 8.3 Wire Mobile, DevOps-tools to app and commit
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
+
   - Run git add . && git commit -m "feat: Add Mobile and DevOps-tools content - Task 8 complete" && git push origin master
-  - _Requirements: 4.6_
+  --_Requirements: 4.6_
+
 
 - [ ] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
 
@@ -258,7 +273,9 @@
   - Cover Computer Science (10-12 flashcards, 6-7 MCQs), Systems (9-10 flashcards, 5-6 MCQs), Logic (8-10 flashcards, 5-6 MCQs), IT Concepts (8-10 flashcards, 6-7 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.4, 6.5, 8.1-8.6_
 
-- [ ] 9.3 Wire Security-Networking, Fundamentals to app and commit
+- [ ] 9.3 Wire Security-Networking, Funda
+
+mentals to app and commit
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add Security-Networking and Fundamentals content - Task 9 complete" && git push origin master
@@ -267,15 +284,23 @@
 - [ ] 10. Update index files and remove deprecated content
 
 - [ ] 10.1 Remove deprecated content files
-  - Delete src/data/flashcards/databases.js
-  - Delete src/data/flashcards/backend.js
+  - Delete src/data/flashcards/data
+
+bases.js
+  - Delete src/data/flashcards/back
+end.js
   - Delete src/data/flashcards/devops.js
   - Delete src/data/mcqs/databases.js
+
   - Delete src/data/mcqs/backend.js
-  - Delete src/data/mcqs/devops.js
+
+  - Delete src/data/mcq
+s/devops.js
+
   - _Requirements: 4.7_
 
-- [ ] 10.2 Update index files to remove deprecated imports
+  - Remove imports for databases.js, backend.js, devops.js from src/data/mcqs/index.js
+
 
   - Remove imports for databases.js, backend.js, devops.js from src/data/flashcards/index.js
   - Remove imports for databases.js, backend.js, devops.js from src/data/mcqs/index.js

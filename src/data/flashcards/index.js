@@ -15,6 +15,8 @@ import { mysqlFlashcards } from './mysql';
 import { mongodbFlashcards } from './mongodb';
 import { javaJeeFlashcards } from './java-jee';
 import { springHibernateFlashcards } from './spring-hibernate';
+import { angularFlashcards } from './angular';
+import { jqueryFlashcards } from './jquery';
 
 export const flashcards = [
   ...reactFlashcards,
@@ -34,4 +36,6 @@ export const flashcards = [
   ...mongodbFlashcards,
   ...javaJeeFlashcards,
   ...springHibernateFlashcards,
+  ...angularFlashcards,
+  ...jqueryFlashcards,
 ];

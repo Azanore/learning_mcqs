@@ -15,6 +15,8 @@ import { mysqlMCQs } from './mysql';
 import { mongodbMCQs } from './mongodb';
 import { javaJeeMCQs } from './java-jee';
 import { springHibernateMCQs } from './spring-hibernate';
+import { angularMCQs } from './angular';
+import { jqueryMCQs } from './jquery';
 
 export const mcqs = [
   ...reactMCQs,
@@ -34,4 +36,6 @@ export const mcqs = [
   ...mongodbMCQs,
   ...javaJeeMCQs,
   ...springHibernateMCQs,
+  ...angularMCQs,
+  ...jqueryMCQs,
 ];

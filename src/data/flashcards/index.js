@@ -19,6 +19,8 @@ import { angularFlashcards } from './angular';
 import { jqueryFlashcards } from './jquery';
 import { mobileFlashcards } from './mobile';
 import { devopsToolsFlashcards } from './devops-tools';
+import { securityNetworkingFlashcards } from './security-networking';
+import { fundamentalsFlashcards } from './fundamentals';
 
 export const flashcards = [
   ...reactFlashcards,
@@ -42,4 +44,6 @@ export const flashcards = [
   ...jqueryFlashcards,
   ...mobileFlashcards,
   ...devopsToolsFlashcards,
+  ...securityNetworkingFlashcards,
+  ...fundamentalsFlashcards,
 ];

@@ -236,7 +236,9 @@
 
 
 
-- [-] 8. Create Grouped topic content files (Mobile, DevOps-tools)
+- [x] 8. Create Grouped topic content files (Mobile, DevOps-tools)
+
+
 
 
 
@@ -258,7 +260,8 @@
   - Cover Kubernetes (10-12 flashcards, 7-8 MCQs), Jenkins (8-10 flashcards, 5-6 MCQs), SonarQube (8-9 flashcards, 5-6 MCQs), RabbitMQ (9-10 flashcards, 5-6 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.2, 6.5, 8.1-8.6_
 
-- [-] 8.3 Wire Mobile, DevOps-tools to app and commit
+- [x] 8.3 Wire Mobile, DevOps-tools to app and commit
+
 
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
@@ -267,22 +270,29 @@
   --_Requirements: 4.6_
 
 
-- [ ] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
+- [-] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
 
 
-- [ ] 9.1 Create Security-Networking flashcards and MCQs
+
+
+
+- [x] 9.1 Create Security-Networking flashcards and MCQs
+
   - Create src/data/flashcards/security-networking.js with 35-40 flashcards
   - Create src/data/mcqs/security-networking.js with 22-25 MCQs
   - Follow 55% Base, 30% Junior, 15% Intermédiaire distribution
   - Cover Cybersecurity (18-20 flashcards, 11-13 MCQs) and Networking (17-20 flashcards, 11-12 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.3, 6.5, 8.1-8.6_
 
-- [ ] 9.2 Create Fundamentals flashcards and MCQs
+
+- [x] 9.2 Create Fundamentals flashcards and MCQs
+
   - Create src/data/flashcards/fundamentals.js with 35-40 flashcards
   - Create src/data/mcqs/fundamentals.js with 22-25 MCQs
   - Follow 55% Base, 30% Junior, 15% Intermédiaire distribution
   - Cover Computer Science (10-12 flashcards, 6-7 MCQs), Systems (9-10 flashcards, 5-6 MCQs), Logic (8-10 flashcards, 5-6 MCQs), IT Concepts (8-10 flashcards, 6-7 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.4, 6.5, 8.1-8.6_
+
 
 - [ ] 9.3 Wire Security-Networking, Funda
 
@@ -363,6 +373,7 @@ s/devops.js
   - _Requirements: 9.1, 9.3, 9.4, 9.6, 9.7_
 
 - [ ] 12. Final validation and testing
+
 - [ ] 12.1 Validate content structure and IDs
   - Verify all composite IDs follow correct format
   - Check difficulty distributions match targets

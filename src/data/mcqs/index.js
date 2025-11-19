@@ -19,6 +19,8 @@ import { angularMCQs } from './angular';
 import { jqueryMCQs } from './jquery';
 import { mobileMCQs } from './mobile';
 import { devopsToolsMCQs } from './devops-tools';
+import { securityNetworkingMCQs } from './security-networking';
+import { fundamentalsMCQs } from './fundamentals';
 
 export const mcqs = [
   ...reactMCQs,
@@ -42,4 +44,6 @@ export const mcqs = [
   ...jqueryMCQs,
   ...mobileMCQs,
   ...devopsToolsMCQs,
+  ...securityNetworkingMCQs,
+  ...fundamentalsMCQs,
 ];

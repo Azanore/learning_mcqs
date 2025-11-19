@@ -1,0 +1,50 @@
+FINAL VERDICT: TOP 3 STRATEGIES (CONSENSUS FROM 25+ RESPONSES)
+
+═══════════════════════════════════════════════════════════════
+
+1. ACTIVE RECALL FLASHCARDS (80/20 RULE)
+Strongest consensus (17+ mentions). Junior QCMs recycle the same 20% of concepts.
+
+Do this:
+• 15-20 cards per known tech, 5 cards per unknown (definition + purpose only)
+• "Why NOT" format: correct answer + why 2 distractors fail
+• 3 daily sessions (15 mins each), drill failures immediately
+• Day 1: create cards (2h) | Days 2-3: drill 3×15min/day
+
+Skip: Advanced features, edge cases, anything not in 80% of junior questions.
+
+═══════════════════════════════════════════════════════════════
+
+2. KEYWORD-PATTERN MAPPING
+Second strongest (15+ mentions). QCMs test term recognition, not implementation.
+
+Do this:
+• One-line per tech: Purpose + 3 keywords (Kubernetes = orchestration, pods, scaling)
+• Comparison tables for look-alikes (React vs Angular, MySQL vs MongoDB)
+• "If stem says X → answer Y" rules
+• Day 1: map all 25 techs (2h) | Day 2: refine (1h) | Day 3: skim (30min)
+
+Skip: Installation, tutorials, anything beyond one-page cheat sheets.
+
+═══════════════════════════════════════════════════════════════
+
+3. TIMED MOCKS + ERROR LOG
+Third strongest (14+ mentions). Builds speed, kills anxiety, trains elimination.
+
+Do this:
+• 2 mixed mocks (45-60min each), strict timing
+• Log every mistake with 1-line fix, add to flashcards
+• Final mock on Day 3 under exam conditions
+• Day 1: baseline mock (1h) | Day 2: targeted mock (1h) | Day 3: final (45min)
+
+Skip: Obsessing over scores, redoing same questions without fixing errors.
+
+═══════════════════════════════════════════════════════════════
+
+3-DAY SCHEDULE (5-6 HOURS/DAY)
+
+Day 1: Mapping (2h) + Flashcards creation (2h) + Baseline mock (1h)
+Day 2: Flashcard drills (3×15min) + Mapping refine (1h) + Mock (1h) + Error review (1h)
+Day 3: Flashcard review (45min) + Mapping skim (30min) + Final mock (45min) + Rest (1h)
+
+THE RULE: Breadth beats depth. Cover all 25 techs at surface level before any deep dive.

@@ -99,7 +99,9 @@
   - Run git add . && git commit -m "feat: Add HTML, CSS, and Bootstrap content" && git push origin master
   - _Requirements: 4.6_
 
-- [-] 4. Create Heavy topic content files (PHP, Laravel, Node.js/Express)
+- [x] 4. Create Heavy topic content files (PHP, Laravel, Node.js/Express)
+
+
 
 
 - [x] 4.1 Create PHP flashcards and MCQs
@@ -129,30 +131,37 @@
   - Focus on async/await, routing, middleware, npm, modules, REST APIs
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [-] 4.4 Wire PHP, Laravel, Node.js/Express to app and commit
+- [x] 4.4 Wire PHP, Laravel, Node.js/Express to app and commit
+
 
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add PHP, Laravel, and Node.js/Express content - Task 4 complete" && git push origin master
   - _Requirements: 4.6_
+- [-] 5. Create Heavy topic content files (MySQL, MongoDB)
 
 - [ ] 5. Create Heavy topic content files (MySQL, MongoDB)
 
-- [ ] 5.1 Create MySQL flashcards and MCQs
+- [x] 5.1 Create MySQL flashcards and MCQs
+
+
   - Create src/data/flashcards/mysql.js with 40-50 flashcards
   - Create src/data/mcqs/mysql.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on SQL queries, JOINs, indexes, transactions, normalization
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 5.2 Create MongoDB flashcards and MCQs
+- [x] 5.2 Create MongoDB flashcards and MCQs
+
+
   - Create src/data/flashcards/mongodb.js with 40-50 flashcards
   - Create src/data/mcqs/mongodb.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on documents, collections, queries, aggregation, indexes, schema design
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [ ] 5.3 Wire MySQL, MongoDB to app and commit
+- [-] 5.3 Wire MySQL, MongoDB to app and commit
+
   - Add imports to src/data/flashcards/index.js
   - Add imports to src/data/mcqs/index.js
   - Run git add . && git commit -m "feat: Add MySQL and MongoDB content - Task 5 complete" && git push origin master

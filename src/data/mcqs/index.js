@@ -11,6 +11,8 @@ import { devopsMCQs } from './devops';
 import { phpMCQs } from './php';
 import { laravelMCQs } from './laravel';
 import { nodejsExpressMCQs } from './nodejs-express';
+import { mysqlMCQs } from './mysql';
+import { mongodbMCQs } from './mongodb';
 
 export const mcqs = [
   ...reactMCQs,
@@ -26,4 +28,6 @@ export const mcqs = [
   ...phpMCQs,
   ...laravelMCQs,
   ...nodejsExpressMCQs,
+  ...mysqlMCQs,
+  ...mongodbMCQs,
 ];

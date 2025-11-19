@@ -11,6 +11,8 @@ import { devopsFlashcards } from './devops';
 import { phpFlashcards } from './php';
 import { laravelFlashcards } from './laravel';
 import { nodejsExpressFlashcards } from './nodejs-express';
+import { mysqlFlashcards } from './mysql';
+import { mongodbFlashcards } from './mongodb';
 
 export const flashcards = [
   ...reactFlashcards,
@@ -26,4 +28,6 @@ export const flashcards = [
   ...phpFlashcards,
   ...laravelFlashcards,
   ...nodejsExpressFlashcards,
+  ...mysqlFlashcards,
+  ...mongodbFlashcards,
 ];

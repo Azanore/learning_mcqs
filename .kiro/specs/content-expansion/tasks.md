@@ -70,19 +70,16 @@
 
 
 
-- [ ] 3. Create Heavy topic content files (HTML, CSS, Bootstrap)
+- [x] 3. Create Heavy topic content files (HTML, CSS, Bootstrap)
 
-- [ ] 3.1 Create HTML flashcards and MCQs
+- [x] 3.1 Create HTML flashcards and MCQs
   - Create src/data/flashcards/html.js with 40-50 flashcards
   - Create src/data/mcqs/html.js with 30-40 MCQs
-
-
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on semantic HTML, forms, accessibility, HTML5 features
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
-- [-] 3.2 Create CSS flashcards and MCQs
-
+- [x] 3.2 Create CSS flashcards and MCQs
   - Create src/data/flashcards/css.js with 40-50 flashcards
   - Create src/data/mcqs/css.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
@@ -90,13 +87,17 @@
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
 - [x] 3.3 Create Bootstrap flashcards and MCQs
-
-
   - Create src/data/flashcards/bootstrap.js with 40-50 flashcards
   - Create src/data/mcqs/bootstrap.js with 30-40 MCQs
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on grid system, components, utilities, responsive classes
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
+
+- [x] 3.4 Wire HTML, CSS, Bootstrap to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add HTML, CSS, and Bootstrap content" && git push origin master
+  - _Requirements: 4.6_
 
 - [ ] 4. Create Heavy topic content files (PHP, Laravel, Node.js/Express)
 - [ ] 4.1 Create PHP flashcards and MCQs
@@ -120,6 +121,12 @@
   - Focus on async/await, routing, middleware, npm, modules, REST APIs
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
+- [ ] 4.4 Wire PHP, Laravel, Node.js/Express to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add PHP, Laravel, and Node.js/Express content - Task 4 complete" && git push origin master
+  - _Requirements: 4.6_
+
 - [ ] 5. Create Heavy topic content files (MySQL, MongoDB)
 - [ ] 5.1 Create MySQL flashcards and MCQs
   - Create src/data/flashcards/mysql.js with 40-50 flashcards
@@ -134,6 +141,12 @@
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on documents, collections, queries, aggregation, indexes, schema design
   - _Requirements: 1.1, 1.2, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
+
+- [ ] 5.3 Wire MySQL, MongoDB to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add MySQL and MongoDB content - Task 5 complete" && git push origin master
+  - _Requirements: 4.6_
 
 - [ ] 6. Create Medium topic content files (Java/JEE, Spring/Hibernate)
 - [ ] 6.1 Create Java/JEE flashcards and MCQs
@@ -150,6 +163,12 @@
   - Focus on dependency injection, Spring Boot, annotations, Hibernate ORM, JPA
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
 
+- [ ] 6.3 Wire Java/JEE, Spring/Hibernate to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add Java/JEE and Spring/Hibernate content - Task 6 complete" && git push origin master
+  - _Requirements: 4.6_
+
 - [ ] 7. Create Medium topic content files (Angular, jQuery)
 - [ ] 7.1 Create Angular flashcards and MCQs
   - Create src/data/flashcards/angular.js with 30-35 flashcards
@@ -164,6 +183,12 @@
   - Follow 50% Base, 35% Junior, 15% Intermédiaire distribution
   - Focus on selectors, DOM manipulation, events, AJAX, common methods
   - _Requirements: 1.3, 1.4, 2.1, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 8.1-8.6_
+
+- [ ] 7.3 Wire Angular, jQuery to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add Angular and jQuery content - Task 7 complete" && git push origin master
+  - _Requirements: 4.6_
 
 - [ ] 8. Create Grouped topic content files (Mobile, DevOps-tools)
 - [ ] 8.1 Create Mobile flashcards and MCQs
@@ -180,6 +205,12 @@
   - Cover Kubernetes (10-12 flashcards, 7-8 MCQs), Jenkins (8-10 flashcards, 5-6 MCQs), SonarQube (8-9 flashcards, 5-6 MCQs), RabbitMQ (9-10 flashcards, 5-6 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.2, 6.5, 8.1-8.6_
 
+- [ ] 8.3 Wire Mobile, DevOps-tools to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add Mobile and DevOps-tools content - Task 8 complete" && git push origin master
+  - _Requirements: 4.6_
+
 - [ ] 9. Create Grouped topic content files (Security-Networking, Fundamentals)
 - [ ] 9.1 Create Security-Networking flashcards and MCQs
   - Create src/data/flashcards/security-networking.js with 35-40 flashcards
@@ -195,20 +226,14 @@
   - Cover Computer Science (10-12 flashcards, 6-7 MCQs), Systems (9-10 flashcards, 5-6 MCQs), Logic (8-10 flashcards, 5-6 MCQs), IT Concepts (8-10 flashcards, 6-7 MCQs)
   - _Requirements: 1.5, 1.6, 2.2, 3.1, 3.2, 4.1, 4.2, 5.1-5.8, 6.4, 6.5, 8.1-8.6_
 
+- [ ] 9.3 Wire Security-Networking, Fundamentals to app and commit
+  - Add imports to src/data/flashcards/index.js
+  - Add imports to src/data/mcqs/index.js
+  - Run git add . && git commit -m "feat: Add Security-Networking and Fundamentals content - Task 9 complete" && git push origin master
+  - _Requirements: 4.6_
+
 - [ ] 10. Update index files and remove deprecated content
-- [ ] 10.1 Update flashcards index file
-  - Remove imports for databases.js, backend.js, devops.js
-  - Add imports for all 16 new flashcard files
-  - Combine all arrays in export
-  - _Requirements: 4.6_
-
-- [ ] 10.2 Update MCQs index file
-  - Remove imports for databases.js, backend.js, devops.js
-  - Add imports for all 16 new MCQ files
-  - Combine all arrays in export
-  - _Requirements: 4.6_
-
-- [ ] 10.3 Remove deprecated content files
+- [ ] 10.1 Remove deprecated content files
   - Delete src/data/flashcards/databases.js
   - Delete src/data/flashcards/backend.js
   - Delete src/data/flashcards/devops.js
@@ -216,6 +241,15 @@
   - Delete src/data/mcqs/backend.js
   - Delete src/data/mcqs/devops.js
   - _Requirements: 4.7_
+
+- [ ] 10.2 Update index files to remove deprecated imports
+  - Remove imports for databases.js, backend.js, devops.js from src/data/flashcards/index.js
+  - Remove imports for databases.js, backend.js, devops.js from src/data/mcqs/index.js
+  - _Requirements: 4.6_
+
+- [ ] 10.3 Commit cleanup changes
+  - Run git add . && git commit -m "chore: Remove deprecated content files - Task 10 complete" && git push origin master
+  - _Requirements: 4.6, 4.7_
 
 - [ ] 11. Expand keyword comparison maps
 - [ ] 11.1 Add frontend framework comparison maps
@@ -248,6 +282,10 @@
   - HTTP vs HTTPS
   - TCP vs UDP
   - REST vs GraphQL
+  - _Requirements: 9.1, 9.3, 9.4, 9.6, 9.7_
+
+- [ ] 11.6 Commit comparison maps
+  - Run git add . && git commit -m "feat: Add comprehensive keyword comparison maps - Task 11 complete" && git push origin master
   - _Requirements: 9.1, 9.3, 9.4, 9.6, 9.7_
 
 - [ ] 12. Final validation and testing

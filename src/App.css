@@ -5,16 +5,16 @@
 }
 
 :root {
-  --color-bg: #fafafa;
-  --color-surface: #ffffff;
-  --color-border: #e0e0e0;
-  --color-text: #1a1a1a;
-  --color-text-secondary: #666666;
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-success: #16a34a;
-  --color-error: #dc2626;
-  --color-warning: #ea580c;
+  --color-bg: #0a1628;
+  --color-surface: #0f2744;
+  --color-border: #1e3a5f;
+  --color-text: #e0f2fe;
+  --color-text-secondary: #7dd3fc;
+  --color-primary: #38bdf8;
+  --color-primary-hover: #0ea5e9;
+  --color-success: #34d399;
+  --color-error: #f87171;
+  --color-warning: #fb923c;
   --spacing-xs: 0.5rem;
   --spacing-sm: 0.625rem;
   --spacing-md: 0.75rem;
@@ -240,8 +240,8 @@ body {
 }
 
 .flashcard-back {
-  background: #f0f9ff;
-  border: 2px solid #93c5fd;
+  background: rgba(56, 189, 248, 0.08);
+  border: 2px solid rgba(56, 189, 248, 0.4);
 }
 
 .flashcard-wrapper.difficulty-base .flashcard-front {
@@ -472,17 +472,17 @@ body {
 
 .choice.selected {
   border-color: var(--color-primary);
-  background: rgba(37, 99, 235, 0.04);
+  background: rgba(56, 189, 248, 0.08);
 }
 
 .choice.correct {
   border-color: var(--color-success);
-  background: rgba(22, 163, 74, 0.04);
+  background: rgba(52, 211, 153, 0.08);
 }
 
 .choice.wrong {
   border-color: var(--color-error);
-  background: rgba(220, 38, 38, 0.04);
+  background: rgba(248, 113, 113, 0.08);
 }
 
 .choice-text {
@@ -517,13 +517,13 @@ body {
 }
 
 .result.correct {
-  background: rgba(22, 163, 74, 0.05);
+  background: rgba(52, 211, 153, 0.08);
   border-color: var(--color-success);
   color: var(--color-success);
 }
 
 .result.wrong {
-  background: rgba(220, 38, 38, 0.05);
+  background: rgba(248, 113, 113, 0.08);
   border-color: var(--color-error);
   color: var(--color-error);
 }
@@ -616,6 +616,10 @@ body {
 
 .keyword-table tr:last-child td {
   border-bottom: none;
+}
+
+.keyword-table tbody tr:hover {
+  background: var(--color-bg);
 }
 
 .empty-state {

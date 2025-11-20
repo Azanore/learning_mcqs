@@ -48,4 +48,36 @@ export const mysqlFlashcards = [
   { id: "mysql-42", deck: "MySQL", difficulty: "Intermédiaire", front: "Qu'est-ce qu'une vue (VIEW) ?", back: "Table virtuelle basée sur une requête SELECT stockée", needsReview: false },
   { id: "mysql-43", deck: "MySQL", difficulty: "Intermédiaire", front: "Différence entre DELETE et DROP ?", back: "DELETE supprime des lignes (structure reste). DROP supprime la table entière", needsReview: false },
   { id: "mysql-44", deck: "MySQL", difficulty: "Intermédiaire", front: "Qu'est-ce qu'un trigger ?", back: "Procédure stockée qui s'exécute automatiquement lors d'un événement (INSERT, UPDATE, DELETE)", needsReview: false },
+
+  // Phase 2 Expansion - Gap-filling content (27 flashcards)
+  // Base (22 flashcards)
+  { id: "mysql-45", deck: "MySQL", difficulty: "Base", front: "Que fait SUM() ?", back: "Calcule la somme totale des valeurs d'une colonne numérique", needsReview: false },
+  { id: "mysql-46", deck: "MySQL", difficulty: "Base", front: "Que fait AVG() ?", back: "Calcule la moyenne des valeurs d'une colonne numérique", needsReview: false },
+  { id: "mysql-47", deck: "MySQL", difficulty: "Base", front: "Que fait MAX() ?", back: "Retourne la valeur maximale d'une colonne", needsReview: false },
+  { id: "mysql-48", deck: "MySQL", difficulty: "Base", front: "Que fait MIN() ?", back: "Retourne la valeur minimale d'une colonne", needsReview: false },
+  { id: "mysql-49", deck: "MySQL", difficulty: "Base", front: "Comment vérifier si une valeur est NULL ?", back: "Utiliser IS NULL ou IS NOT NULL (pas = NULL)", needsReview: false },
+  { id: "mysql-50", deck: "MySQL", difficulty: "Base", front: "Que fait NOT IN ?", back: "Vérifie si une valeur n'est PAS dans une liste", needsReview: false },
+  { id: "mysql-51", deck: "MySQL", difficulty: "Base", front: "Que fait NOT BETWEEN ?", back: "Vérifie si une valeur est en dehors d'un intervalle", needsReview: false },
+  { id: "mysql-52", deck: "MySQL", difficulty: "Base", front: "Différence entre % et _ dans LIKE ?", back: "% = plusieurs caractères. _ = exactement un caractère", needsReview: false },
+  { id: "mysql-53", deck: "MySQL", difficulty: "Base", front: "Commande pour créer une base de données ?", back: "CREATE DATABASE nom", needsReview: false },
+  { id: "mysql-54", deck: "MySQL", difficulty: "Base", front: "Que fait DROP DATABASE ?", back: "Supprime complètement une base de données et toutes ses tables", needsReview: false },
+  { id: "mysql-55", deck: "MySQL", difficulty: "Base", front: "Que fait SHOW TABLES ?", back: "Affiche la liste de toutes les tables de la base de données", needsReview: false },
+  { id: "mysql-56", deck: "MySQL", difficulty: "Base", front: "Que fait DESCRIBE table ?", back: "Affiche la structure d'une table (colonnes, types, clés)", needsReview: false },
+  { id: "mysql-57", deck: "MySQL", difficulty: "Base", front: "À quoi sert AS ?", back: "Crée un alias (nom temporaire) pour une colonne ou table", needsReview: false },
+  { id: "mysql-58", deck: "MySQL", difficulty: "Base", front: "Que fait UPPER() ?", back: "Convertit une chaîne en majuscules", needsReview: false },
+  { id: "mysql-59", deck: "MySQL", difficulty: "Base", front: "Que fait LOWER() ?", back: "Convertit une chaîne en minuscules", needsReview: false },
+  { id: "mysql-60", deck: "MySQL", difficulty: "Base", front: "Que fait LENGTH() ?", back: "Retourne la longueur d'une chaîne en caractères", needsReview: false },
+  { id: "mysql-61", deck: "MySQL", difficulty: "Base", front: "Que fait NOW() ?", back: "Retourne la date et l'heure actuelles", needsReview: false },
+  { id: "mysql-62", deck: "MySQL", difficulty: "Base", front: "Que fait CURDATE() ?", back: "Retourne la date actuelle (sans l'heure)", needsReview: false },
+  { id: "mysql-63", deck: "MySQL", difficulty: "Base", front: "Qu'est-ce que NOT NULL ?", back: "Contrainte qui empêche une colonne d'avoir des valeurs NULL", needsReview: false },
+  { id: "mysql-64", deck: "MySQL", difficulty: "Base", front: "Qu'est-ce que UNIQUE ?", back: "Contrainte qui garantit que toutes les valeurs d'une colonne sont différentes", needsReview: false },
+  { id: "mysql-65", deck: "MySQL", difficulty: "Base", front: "Qu'est-ce que DEFAULT ?", back: "Définit une valeur par défaut pour une colonne si aucune valeur n'est fournie", needsReview: false },
+  { id: "mysql-66", deck: "MySQL", difficulty: "Base", front: "Syntaxe pour LIMIT avec OFFSET ?", back: "LIMIT nombre OFFSET décalage (ex: LIMIT 10 OFFSET 20)", needsReview: false },
+
+  // Junior (5 flashcards)
+  { id: "mysql-67", deck: "MySQL", difficulty: "Junior", front: "Qu'est-ce qu'un RIGHT JOIN ?", back: "Retourne toutes les lignes de la table de droite + correspondances de gauche (inverse de LEFT JOIN)", needsReview: false },
+  { id: "mysql-68", deck: "MySQL", difficulty: "Junior", front: "Qu'est-ce qu'un CROSS JOIN ?", back: "Produit cartésien : combine chaque ligne de la première table avec chaque ligne de la seconde", needsReview: false },
+  { id: "mysql-69", deck: "MySQL", difficulty: "Junior", front: "Que fait COUNT(DISTINCT colonne) ?", back: "Compte le nombre de valeurs uniques (sans doublons) dans une colonne", needsReview: false },
+  { id: "mysql-70", deck: "MySQL", difficulty: "Junior", front: "Que fait COALESCE() ?", back: "Retourne la première valeur non NULL dans une liste d'arguments", needsReview: false },
+  { id: "mysql-71", deck: "MySQL", difficulty: "Junior", front: "Qu'est-ce que ON DELETE CASCADE ?", back: "Supprime automatiquement les lignes liées quand la ligne référencée est supprimée", needsReview: false },
 ];

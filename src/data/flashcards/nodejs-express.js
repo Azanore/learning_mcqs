@@ -403,5 +403,233 @@ export const nodejsExpressFlashcards = [
     front: "Comment implémenter l'authentification JWT?",
     back: "Générer token avec jwt.sign(), vérifier avec jwt.verify() dans un middleware d'authentification.",
     needsReview: false
+  },
+
+  // Phase 2 Expansion - Base Level (22 flashcards)
+  {
+    id: "nodejs-express-51",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment envoyer du texte simple en réponse?",
+    back: "res.send('texte'); envoie du texte avec Content-Type text/html par défaut.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-52",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment envoyer un statut HTTP sans corps?",
+    back: "res.sendStatus(404); envoie le code et le message correspondant (Not Found).",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-53",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment accéder aux query strings?",
+    back: "req.query pour /search?q=term&page=1 donne { q: 'term', page: '1' }",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-54",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment parser les données de formulaire?",
+    back: "app.use(express.urlencoded({ extended: true })); pour application/x-www-form-urlencoded.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-55",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment définir un header de réponse?",
+    back: "res.set('Header-Name', 'valeur'); ou res.header('Header-Name', 'valeur');",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-56",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment accéder aux headers de requête?",
+    back: "req.headers ou req.get('header-name') pour un header spécifique.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-57",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment gérer toutes les méthodes HTTP sur une route?",
+    back: "app.all('/chemin', handler); s'applique à GET, POST, PUT, DELETE, etc.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-58",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment installer un package en dépendance de développement?",
+    back: "npm install -D package ou npm install --save-dev package",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-59",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment installer un package globalement?",
+    back: "npm install -g package (disponible dans tout le système, pas juste le projet).",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-60",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Quelle est la différence entre module.exports et exports?",
+    back: "module.exports est l'objet exporté. exports est un raccourci vers module.exports.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-61",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment définir un script npm?",
+    back: "Dans package.json: \"scripts\": { \"start\": \"node app.js\" }, puis npm start.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-62",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment définir plusieurs paramètres de route?",
+    back: "Route::get('/user/:userId/post/:postId', handler); accès via req.params.userId et req.params.postId.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-63",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment chaîner les méthodes de réponse?",
+    back: "res.status(201).json({ created: true }); ou res.type('json').send(data);",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-64",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment définir le Content-Type?",
+    back: "res.type('json'); ou res.set('Content-Type', 'application/json');",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-65",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment envoyer un fichier en téléchargement?",
+    back: "res.download('/chemin/fichier.pdf'); force le téléchargement avec Content-Disposition.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-66",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment envoyer un fichier en réponse?",
+    back: "res.sendFile(path.join(__dirname, 'fichier.html')); nécessite un chemin absolu.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-67",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Syntaxe d'une Promise avec .then()?",
+    back: "promise.then(result => { }).catch(error => { }); pour gérer succès et erreur.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-68",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment créer une Promise?",
+    back: "new Promise((resolve, reject) => { /* opération */ resolve(result); });",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-69",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Qu'est-ce que __dirname en Node.js?",
+    back: "Variable globale contenant le chemin absolu du répertoire du fichier actuel.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-70",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Qu'est-ce que __filename en Node.js?",
+    back: "Variable globale contenant le chemin absolu du fichier actuel.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-71",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment gérer une route PATCH?",
+    back: "app.patch('/chemin/:id', (req, res) => { /* mise à jour partielle */ });",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-72",
+    deck: "Node.js/Express",
+    difficulty: "Base",
+    front: "Comment vérifier la méthode HTTP dans un middleware?",
+    back: "req.method contient 'GET', 'POST', 'PUT', 'DELETE', etc.",
+    needsReview: false
+  },
+
+  // Phase 2 Expansion - Junior Level (6 flashcards)
+  {
+    id: "nodejs-express-73",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Comment appliquer un middleware à une route spécifique?",
+    back: "app.get('/chemin', middleware, handler); le middleware s'exécute avant le handler.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-74",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Comment appliquer plusieurs middlewares à une route?",
+    back: "app.get('/chemin', [middleware1, middleware2], handler); ou les séparer par virgules.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-75",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Qu'est-ce que NODE_ENV?",
+    back: "Variable d'environnement indiquant l'environnement: 'development', 'production', 'test'.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-76",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Comment définir un moteur de templates?",
+    back: "app.set('view engine', 'ejs'); puis res.render('vue', data); pour rendre les vues.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-77",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Comment gérer les routes avec app.route()?",
+    back: "app.route('/chemin').get(handler).post(handler).put(handler); chaîne les méthodes.",
+    needsReview: false
+  },
+  {
+    id: "nodejs-express-78",
+    deck: "Node.js/Express",
+    difficulty: "Junior",
+    front: "Quelle est la signature d'un middleware d'erreur?",
+    back: "(err, req, res, next) => { } avec 4 paramètres. Doit être défini après les routes.",
+    needsReview: false
   }
 ];

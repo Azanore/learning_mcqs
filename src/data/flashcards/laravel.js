@@ -403,5 +403,233 @@ export const laravelFlashcards = [
     front: "Qu'est-ce que le Service Container en Laravel?",
     back: "Conteneur d'injection de dépendances pour gérer les dépendances de classe et résoudre automatiquement.",
     needsReview: false
+  },
+
+  // Phase 2 Expansion - Base Level (22 flashcards)
+  {
+    id: "laravel-51",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment définir une route POST?",
+    back: "Route::post('/chemin', [Controller::class, 'methode']);",
+    needsReview: false
+  },
+  {
+    id: "laravel-52",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment définir une route PUT?",
+    back: "Route::put('/chemin', [Controller::class, 'methode']);",
+    needsReview: false
+  },
+  {
+    id: "laravel-53",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment définir une route DELETE?",
+    back: "Route::delete('/chemin', [Controller::class, 'methode']);",
+    needsReview: false
+  },
+  {
+    id: "laravel-54",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment accéder à un paramètre de requête?",
+    back: "$request->input('nom') ou $request->nom pour accéder aux données POST/GET.",
+    needsReview: false
+  },
+  {
+    id: "laravel-55",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment récupérer toutes les données d'une requête?",
+    back: "$request->all() retourne un tableau de toutes les données de la requête.",
+    needsReview: false
+  },
+  {
+    id: "laravel-56",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment créer un enregistrement avec Eloquent en une ligne?",
+    back: "Modele::create(['champ1' => 'valeur1', 'champ2' => 'valeur2']);",
+    needsReview: false
+  },
+  {
+    id: "laravel-57",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment mettre à jour un enregistrement Eloquent?",
+    back: "$modele->update(['champ' => 'nouvelle_valeur']); ou modifier puis $modele->save();",
+    needsReview: false
+  },
+  {
+    id: "laravel-58",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment supprimer un enregistrement Eloquent?",
+    back: "$modele->delete(); ou Modele::destroy($id); pour supprimer par ID.",
+    needsReview: false
+  },
+  {
+    id: "laravel-59",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment filtrer des enregistrements avec where()?",
+    back: "Modele::where('colonne', 'valeur')->get(); retourne les enregistrements correspondants.",
+    needsReview: false
+  },
+  {
+    id: "laravel-60",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment récupérer le premier enregistrement d'une requête?",
+    back: "Modele::where('colonne', 'valeur')->first(); retourne le premier résultat ou null.",
+    needsReview: false
+  },
+  {
+    id: "laravel-61",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Syntaxe Blade pour @else?",
+    back: "@if($condition) contenu @else autre_contenu @endif",
+    needsReview: false
+  },
+  {
+    id: "laravel-62",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Syntaxe Blade pour @elseif?",
+    back: "@if($cond1) contenu @elseif($cond2) autre @else défaut @endif",
+    needsReview: false
+  },
+  {
+    id: "laravel-63",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment créer une boucle for dans Blade?",
+    back: "@for($i = 0; $i < 10; $i++) {{ $i }} @endfor",
+    needsReview: false
+  },
+  {
+    id: "laravel-64",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment réinitialiser complètement la base de données?",
+    back: "php artisan migrate:fresh supprime toutes les tables et réexécute les migrations.",
+    needsReview: false
+  },
+  {
+    id: "laravel-65",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment exécuter les seeders?",
+    back: "php artisan db:seed ou db:seed --class=NomSeeder pour un seeder spécifique.",
+    needsReview: false
+  },
+  {
+    id: "laravel-66",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Quelle règle de validation pour un champ obligatoire?",
+    back: "'champ' => 'required' vérifie que le champ est présent et non vide.",
+    needsReview: false
+  },
+  {
+    id: "laravel-67",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Quelle règle de validation pour un email?",
+    back: "'email' => 'required|email' vérifie le format d'adresse email valide.",
+    needsReview: false
+  },
+  {
+    id: "laravel-68",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Quelle règle de validation pour une longueur maximale?",
+    back: "'champ' => 'max:255' limite la longueur à 255 caractères maximum.",
+    needsReview: false
+  },
+  {
+    id: "laravel-69",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment définir un paramètre de route?",
+    back: "Route::get('/user/{id}', function($id) { }); {id} est le paramètre.",
+    needsReview: false
+  },
+  {
+    id: "laravel-70",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment inclure une vue partielle dans Blade?",
+    back: "@include('partials.nom') inclut la vue resources/views/partials/nom.blade.php.",
+    needsReview: false
+  },
+  {
+    id: "laravel-71",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment créer un modèle avec migration?",
+    back: "php artisan make:model Nom -m crée le modèle et la migration associée.",
+    needsReview: false
+  },
+  {
+    id: "laravel-72",
+    deck: "Laravel",
+    difficulty: "Base",
+    front: "Comment créer un modèle avec migration et factory?",
+    back: "php artisan make:model Nom -mf crée modèle, migration et factory.",
+    needsReview: false
+  },
+
+  // Phase 2 Expansion - Junior Level (6 flashcards)
+  {
+    id: "laravel-73",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Quelles sont les 7 méthodes d'un contrôleur resource?",
+    back: "index, create, store, show, edit, update, destroy (routes CRUD complètes).",
+    needsReview: false
+  },
+  {
+    id: "laravel-74",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Quelle est la différence entre Route::resource() et Route::apiResource()?",
+    back: "apiResource() exclut create et edit (pas de vues HTML), garde index, store, show, update, destroy.",
+    needsReview: false
+  },
+  {
+    id: "laravel-75",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Comment créer un modèle avec tous les fichiers associés?",
+    back: "php artisan make:model Nom -a crée modèle, migration, factory, seeder et controller.",
+    needsReview: false
+  },
+  {
+    id: "laravel-76",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Comment utiliser une factory pour créer plusieurs enregistrements?",
+    back: "Modele::factory()->count(10)->create(); génère 10 enregistrements en base.",
+    needsReview: false
+  },
+  {
+    id: "laravel-77",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Comment appliquer plusieurs middlewares à une route?",
+    back: "Route::get('/chemin')->middleware(['auth', 'verified']); avec un tableau.",
+    needsReview: false
+  },
+  {
+    id: "laravel-78",
+    deck: "Laravel",
+    difficulty: "Junior",
+    front: "Comment combiner plusieurs règles de validation?",
+    back: "'champ' => 'required|email|max:255|unique:users' avec le séparateur |.",
+    needsReview: false
   }
 ];

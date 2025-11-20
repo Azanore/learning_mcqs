@@ -48,4 +48,36 @@ export const mongodbFlashcards = [
   { id: "mongodb-42", deck: "MongoDB", difficulty: "Intermédiaire", front: "Que fait explain() ?", back: "Affiche le plan d'exécution d'une requête pour l'optimisation", needsReview: false },
   { id: "mongodb-43", deck: "MongoDB", difficulty: "Intermédiaire", front: "Qu'est-ce que le write concern ?", back: "Niveau de confirmation demandé pour les opérations d'écriture", needsReview: false },
   { id: "mongodb-44", deck: "MongoDB", difficulty: "Intermédiaire", front: "Qu'est-ce que le read preference ?", back: "Définit où lire les données dans un replica set (primary, secondary, etc.)", needsReview: false },
+
+  // Phase 2 Expansion - Gap-filling content (27 flashcards)
+  // Base (22 flashcards)
+  { id: "mongodb-45", deck: "MongoDB", difficulty: "Base", front: "Que fait $lt dans une requête ?", back: "Less than - trouve les valeurs inférieures : {age: {$lt: 18}}", needsReview: false },
+  { id: "mongodb-46", deck: "MongoDB", difficulty: "Base", front: "Que fait $gte ?", back: "Greater than or equal - trouve les valeurs supérieures ou égales", needsReview: false },
+  { id: "mongodb-47", deck: "MongoDB", difficulty: "Base", front: "Que fait $lte ?", back: "Less than or equal - trouve les valeurs inférieures ou égales", needsReview: false },
+  { id: "mongodb-48", deck: "MongoDB", difficulty: "Base", front: "Que fait $ne ?", back: "Not equal - trouve les documents où le champ n'est pas égal à une valeur", needsReview: false },
+  { id: "mongodb-49", deck: "MongoDB", difficulty: "Base", front: "Que fait $nin ?", back: "Not in - trouve les documents où le champ n'est PAS dans une liste", needsReview: false },
+  { id: "mongodb-50", deck: "MongoDB", difficulty: "Base", front: "Que fait $or ?", back: "Opérateur logique : au moins une condition doit être vraie", needsReview: false },
+  { id: "mongodb-51", deck: "MongoDB", difficulty: "Base", front: "Que fait $and ?", back: "Opérateur logique : toutes les conditions doivent être vraies", needsReview: false },
+  { id: "mongodb-52", deck: "MongoDB", difficulty: "Base", front: "Que fait $exists ?", back: "Vérifie si un champ existe dans le document : {field: {$exists: true}}", needsReview: false },
+  { id: "mongodb-53", deck: "MongoDB", difficulty: "Base", front: "Que fait $inc ?", back: "Incrémente la valeur d'un champ numérique : {$inc: {age: 1}}", needsReview: false },
+  { id: "mongodb-54", deck: "MongoDB", difficulty: "Base", front: "Que fait $unset ?", back: "Supprime un champ d'un document : {$unset: {field: ''}}", needsReview: false },
+  { id: "mongodb-55", deck: "MongoDB", difficulty: "Base", front: "Que fait skip(10) ?", back: "Saute les 10 premiers documents (utile pour la pagination)", needsReview: false },
+  { id: "mongodb-56", deck: "MongoDB", difficulty: "Base", front: "Comment projeter seulement certains champs ?", back: "find({}, {name: 1, age: 1}) - 1 = inclure, 0 = exclure", needsReview: false },
+  { id: "mongodb-57", deck: "MongoDB", difficulty: "Base", front: "Que fait distinct() ?", back: "Retourne les valeurs uniques d'un champ : db.collection.distinct('field')", needsReview: false },
+  { id: "mongodb-58", deck: "MongoDB", difficulty: "Base", front: "Que fait replaceOne() ?", back: "Remplace complètement un document (contrairement à updateOne avec $set)", needsReview: false },
+  { id: "mongodb-59", deck: "MongoDB", difficulty: "Base", front: "Que fait $project dans aggregate ?", back: "Sélectionne ou transforme les champs à inclure dans les résultats", needsReview: false },
+  { id: "mongodb-60", deck: "MongoDB", difficulty: "Base", front: "Que fait $sort dans aggregate ?", back: "Trie les documents dans le pipeline : {$sort: {field: 1}}", needsReview: false },
+  { id: "mongodb-61", deck: "MongoDB", difficulty: "Base", front: "Que fait $limit dans aggregate ?", back: "Limite le nombre de documents dans le pipeline", needsReview: false },
+  { id: "mongodb-62", deck: "MongoDB", difficulty: "Base", front: "Que fait $skip dans aggregate ?", back: "Saute un nombre de documents dans le pipeline", needsReview: false },
+  { id: "mongodb-63", deck: "MongoDB", difficulty: "Base", front: "Que fait $count dans aggregate ?", back: "Compte les documents et retourne le résultat dans un champ nommé", needsReview: false },
+  { id: "mongodb-64", deck: "MongoDB", difficulty: "Base", front: "Comment utiliser $sum dans $group ?", back: "{$group: {_id: '$field', total: {$sum: '$amount'}}}", needsReview: false },
+  { id: "mongodb-65", deck: "MongoDB", difficulty: "Base", front: "Comment utiliser $avg dans $group ?", back: "{$group: {_id: '$field', moyenne: {$avg: '$value'}}}", needsReview: false },
+  { id: "mongodb-66", deck: "MongoDB", difficulty: "Base", front: "Que fait getIndexes() ?", back: "Affiche tous les index d'une collection : db.collection.getIndexes()", needsReview: false },
+
+  // Junior (5 flashcards)
+  { id: "mongodb-67", deck: "MongoDB", difficulty: "Junior", front: "Que fait $addToSet ?", back: "Ajoute un élément à un tableau seulement s'il n'existe pas déjà (évite doublons)", needsReview: false },
+  { id: "mongodb-68", deck: "MongoDB", difficulty: "Junior", front: "Différence entre countDocuments et estimatedDocumentCount ?", back: "countDocuments = compte précis avec filtre. estimatedDocumentCount = estimation rapide sans filtre", needsReview: false },
+  { id: "mongodb-69", deck: "MongoDB", difficulty: "Junior", front: "Que fait $elemMatch ?", back: "Trouve les documents où un élément de tableau correspond à plusieurs conditions", needsReview: false },
+  { id: "mongodb-70", deck: "MongoDB", difficulty: "Junior", front: "Que fait $size ?", back: "Filtre les documents selon la taille d'un tableau : {array: {$size: 3}}", needsReview: false },
+  { id: "mongodb-71", deck: "MongoDB", difficulty: "Junior", front: "Que fait bulkWrite() ?", back: "Exécute plusieurs opérations d'écriture (insert, update, delete) en une seule requête", needsReview: false },
 ];

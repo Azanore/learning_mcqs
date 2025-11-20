@@ -403,5 +403,221 @@ export const phpFlashcards = [
     front: "Qu'est-ce que le null coalescing operator (??) en PHP?",
     back: "$x = $y ?? 'default'; Retourne $y si défini et non null, sinon 'default'. Plus court que isset().",
     needsReview: false
+  },
+  {
+    id: "php-51",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait explode(separator, string) ?",
+    back: "Divise une chaîne en tableau : explode(',', 'a,b,c') // ['a','b','c']",
+    needsReview: false
+  },
+  {
+    id: "php-52",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait implode(separator, array) ?",
+    back: "Convertit un tableau en chaîne : implode(',', ['a','b']) // 'a,b'",
+    needsReview: false
+  },
+  {
+    id: "php-53",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait in_array(value, array) ?",
+    back: "Vérifie si une valeur existe dans un tableau : in_array('a', ['a','b']) // true",
+    needsReview: false
+  },
+  {
+    id: "php-54",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait array_merge(arr1, arr2) ?",
+    back: "Fusionne deux ou plusieurs tableaux en un seul tableau",
+    needsReview: false
+  },
+  {
+    id: "php-55",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait array_keys(array) ?",
+    back: "Retourne un tableau contenant toutes les clés d'un tableau",
+    needsReview: false
+  },
+  {
+    id: "php-56",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait array_values(array) ?",
+    back: "Retourne un tableau contenant toutes les valeurs d'un tableau",
+    needsReview: false
+  },
+  {
+    id: "php-57",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait str_replace(search, replace, string) ?",
+    back: "Remplace toutes les occurrences : str_replace('a', 'A', 'banana') // 'bAnAnA'",
+    needsReview: false
+  },
+  {
+    id: "php-58",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait substr(string, start, length) ?",
+    back: "Extrait une portion de chaîne : substr('hello', 1, 3) // 'ell'",
+    needsReview: false
+  },
+  {
+    id: "php-59",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait strpos(string, search) ?",
+    back: "Retourne la position de la première occurrence ou false si absent",
+    needsReview: false
+  },
+  {
+    id: "php-60",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait trim(string) ?",
+    back: "Supprime les espaces au début et à la fin d'une chaîne",
+    needsReview: false
+  },
+  {
+    id: "php-61",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait is_array(variable) ?",
+    back: "Vérifie si une variable est un tableau : is_array([1,2]) // true",
+    needsReview: false
+  },
+  {
+    id: "php-62",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait var_dump(variable) ?",
+    back: "Affiche les informations détaillées d'une variable (type, valeur, structure)",
+    needsReview: false
+  },
+  {
+    id: "php-63",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait print_r(variable) ?",
+    back: "Affiche une variable de manière lisible (moins détaillé que var_dump)",
+    needsReview: false
+  },
+  {
+    id: "php-64",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait unset(variable) ?",
+    back: "Détruit une variable ou un élément de tableau",
+    needsReview: false
+  },
+  {
+    id: "php-65",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait die(message) ?",
+    back: "Affiche un message et arrête l'exécution du script (alias de exit)",
+    needsReview: false
+  },
+  {
+    id: "php-66",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait json_encode(data) ?",
+    back: "Convertit une variable PHP en chaîne JSON",
+    needsReview: false
+  },
+  {
+    id: "php-67",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait json_decode(json) ?",
+    back: "Convertit une chaîne JSON en variable PHP (objet ou tableau)",
+    needsReview: false
+  },
+  {
+    id: "php-68",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait htmlspecialchars(string) ?",
+    back: "Convertit les caractères spéciaux en entités HTML pour éviter les failles XSS",
+    needsReview: false
+  },
+  {
+    id: "php-69",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait sort(array) ?",
+    back: "Trie un tableau par ordre croissant (modifie le tableau original)",
+    needsReview: false
+  },
+  {
+    id: "php-70",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait array_search(value, array) ?",
+    back: "Retourne la clé de la première occurrence ou false si absent",
+    needsReview: false
+  },
+  {
+    id: "php-71",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait file_get_contents(filename) ?",
+    back: "Lit tout le contenu d'un fichier dans une chaîne",
+    needsReview: false
+  },
+  {
+    id: "php-72",
+    deck: "PHP",
+    difficulty: "Base",
+    front: "Que fait is_numeric(variable) ?",
+    back: "Vérifie si une variable est un nombre ou une chaîne numérique",
+    needsReview: false
+  },
+  {
+    id: "php-73",
+    deck: "PHP",
+    difficulty: "Junior",
+    front: "Que fait array_slice(array, start, length) ?",
+    back: "Extrait une portion de tableau sans modifier l'original",
+    needsReview: false
+  },
+  {
+    id: "php-74",
+    deck: "PHP",
+    difficulty: "Junior",
+    front: "Que fait array_splice(array, start, length) ?",
+    back: "Supprime/remplace une portion de tableau (modifie l'original)",
+    needsReview: false
+  },
+  {
+    id: "php-75",
+    deck: "PHP",
+    difficulty: "Junior",
+    front: "Que fait password_hash(password, algo) ?",
+    back: "Crée un hash sécurisé d'un mot de passe : password_hash($pwd, PASSWORD_DEFAULT)",
+    needsReview: false
+  },
+  {
+    id: "php-76",
+    deck: "PHP",
+    difficulty: "Junior",
+    front: "Que fait password_verify(password, hash) ?",
+    back: "Vérifie si un mot de passe correspond à un hash",
+    needsReview: false
+  },
+  {
+    id: "php-77",
+    deck: "PHP",
+    difficulty: "Junior",
+    front: "Qu'est-ce que l'opérateur spaceship (<=>) ?",
+    back: "Compare deux valeurs : retourne -1, 0 ou 1. Utile pour le tri : $a <=> $b",
+    needsReview: false
   }
 ];

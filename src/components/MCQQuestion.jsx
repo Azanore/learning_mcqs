@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, CheckCircle, XCircle, Circle, CheckSquare, Square } from 'lucide-react';
+import { ChevronLeft, ChevronRight, CheckCircle, XCircle, Circle, CheckSquare, Square, X } from 'lucide-react';
 
 export default function MCQQuestion({ questions, topic }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,36 +114,49 @@ export default function MCQQuestion({ questions, topic }) {
         })}
       </div>
 
-      {showResult && (
-        <div className={`result ${isCorrect ? 'correct' : 'wrong'}`}>
-          <strong>{isCorrect ? '✓ Correct !' : '✗ Incorrect'}</strong>
-          <p>{question.explanation}</p>
-        </div>
-      )}
-
       <div className="card-actions">
         <button onClick={handlePrev} className="btn-icon">
           <ChevronLeft size={20} />
         </button>
 
-        {!showResult ? (
-          <button
-            onClick={handleCheck}
-            className="btn-primary"
-            disabled={selectedAnswers.length === 0}
-          >
-            Vérifier
-          </button>
-        ) : (
-          <button onClick={handleNext} className="btn-primary">
-            Suivant
-          </button>
-        )}
+        <button
+          onClick={handleCheck}
+          className="btn-primary"
+          disabled={selectedAnswers.length === 0}
+        >
+          Vérifier
+        </button>
 
         <button onClick={handleNext} className="btn-icon">
           <ChevronRight size={20} />
         </button>
       </div>
+
+      {showResult && (
+        <>
+          <div className="modal-overlay" onClick={() => setShowResult(false)} />
+          <div className="result-modal">
+            <button className="modal-close" onClick={() => setShowResult(false)}>
+              <X size={20} />
+            </button>
+            <div className={`result-content ${isCorrect ? 'correct' : 'wrong'}`}>
+              <strong>{isCorrect ? '✓ Correct !' : '✗ Incorrect'}</strong>
+              <p>{question.explanation}</p>
+            </div>
+            <div className="modal-actions">
+              <button onClick={handlePrev} className="btn-icon">
+                <ChevronLeft size={20} />
+              </button>
+              <button onClick={handleNext} className="btn-primary">
+                Suivant
+              </button>
+              <button onClick={handleNext} className="btn-icon">
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

@@ -510,34 +510,111 @@ body {
   color: var(--color-error);
 }
 
-.result {
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.result-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 2rem);
+  max-width: 500px;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-xl);
+  z-index: 101;
+  animation: slideUp 0.3s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  padding: var(--spacing-xs);
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.result-content {
   padding: var(--spacing-lg);
   border-radius: var(--radius);
   border: 2px solid;
+  margin-bottom: var(--spacing-lg);
 }
 
-.result.correct {
+.result-content.correct {
   background: rgba(52, 211, 153, 0.08);
   border-color: var(--color-success);
   color: var(--color-success);
 }
 
-.result.wrong {
+.result-content.wrong {
   background: rgba(248, 113, 113, 0.08);
   border-color: var(--color-error);
   color: var(--color-error);
 }
 
-.result strong {
+.result-content strong {
   display: block;
   margin-bottom: var(--spacing-sm);
   font-size: 1rem;
 }
 
-.result p {
+.result-content p {
   color: var(--color-text);
   font-size: 0.9375rem;
   line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .map-container {

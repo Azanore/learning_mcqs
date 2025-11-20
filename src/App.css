@@ -531,37 +531,16 @@ body {
   background: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius);
-  padding: var(--spacing-xl);
+  padding: 1rem 1rem 0.5rem;
   z-index: 101;
   animation: slideUp 0.3s ease-out;
 }
 
-.modal-close {
-  position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
-  padding: var(--spacing-xs);
-  background: transparent;
-  border: none;
-  color: var(--color-text-secondary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: all 0.2s;
-}
-
-.modal-close:hover {
-  background: var(--color-bg);
-  color: var(--color-text);
-}
-
 .result-content {
-  padding: var(--spacing-lg);
+  padding: 1.25rem;
   border-radius: var(--radius);
   border: 2px solid;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 1.25rem;
 }
 
 .result-content.correct {

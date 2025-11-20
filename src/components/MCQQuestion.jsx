@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, CheckCircle, XCircle, Circle, CheckSquare, Square, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, CheckCircle, XCircle, Circle, CheckSquare, Square } from 'lucide-react';
 
 export default function MCQQuestion({ questions, topic }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -136,9 +136,6 @@ export default function MCQQuestion({ questions, topic }) {
         <>
           <div className="modal-overlay" onClick={() => setShowResult(false)} />
           <div className="result-modal">
-            <button className="modal-close" onClick={() => setShowResult(false)}>
-              <X size={20} />
-            </button>
             <div className={`result-content ${isCorrect ? 'correct' : 'wrong'}`}>
               <strong>{isCorrect ? '✓ Correct !' : '✗ Incorrect'}</strong>
               <p>{question.explanation}</p>

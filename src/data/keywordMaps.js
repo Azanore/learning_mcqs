@@ -193,13 +193,18 @@ export const keywordMaps = [
     data: {
       headers: ["Aspect", "Express (Node.js)", "Laravel (PHP)", "Spring Boot (Java)"],
       rows: [
-        ["Routing", "app.get('/path', handler)", "Route::get('/path', [Controller])", "@GetMapping(\"/path\")"],
+        ["Déclarer controller", "const app = express()", "class UserController extends Controller", "@RestController sur une classe"],
+        ["Route GET", "app.get('/', (req, res) => res.send('Hello'))", "Route::get('/', [Controller::class, 'index'])", "@GetMapping('/') public String home() { return 'Hello'; }"],
+        ["Route POST", "app.post('/users', (req, res) => {...})", "Route::post('/users', [Controller::class, 'store'])", "@PostMapping('/users') public User create(@RequestBody User user)"],
+        ["Paramètres URL", "req.params.id", "$request->route('id')", "@PathVariable Long id"],
+        ["Body JSON", "req.body", "$request->input('name')", "@RequestBody User user"],
+        ["Lancer serveur", "app.listen(3000)", "php artisan serve (port 8000)", "mvn spring-boot:run (port 8080)"],
+        ["Installer dépendances", "npm install express", "composer require laravel/framework", "pom.xml avec spring-boot-starter-web"],
+        ["Hot reload", "nodemon", "Pas natif (extensions IDE)", "spring-boot-devtools"],
         ["Middleware", "app.use(middleware)", "Middleware classes", "@Component, filters"],
         ["ORM", "Sequelize, Prisma", "Eloquent ORM", "Hibernate, JPA"],
-        ["Validation", "express-validator", "Request validation", "@Valid, annotations"],
-        ["Dépendances", "npm packages", "Composer packages", "Maven/Gradle"],
+        ["Variables env", "process.env.PORT", "env('APP_PORT')", "@Value('${server.port}')"],
         ["Architecture", "Minimaliste, flexible", "MVC structuré", "Enterprise, annotations"],
-        ["Performance", "Très rapide (async)", "Rapide", "Rapide (JVM)"],
         ["Cas d'usage", "APIs REST, microservices", "Apps web complètes", "Apps enterprise, microservices"]
       ]
     }
@@ -451,6 +456,84 @@ export const keywordMaps = [
         ["VNC", "5900", "Bureau à distance", "Contrôle à distance multi-plateforme"],
         ["Docker", "2375/2376", "Containerisation", "API Docker (2376 avec TLS)"],
         ["Kubernetes API", "6443", "Orchestration", "API Kubernetes (kubectl)"]
+      ]
+    }
+  },
+  {
+    id: 27,
+    title: "Mongoose (MongoDB) vs JPA/Hibernate (SQL)",
+    type: "table",
+    data: {
+      headers: ["Opération", "Mongoose (MongoDB/Node.js)", "Spring Boot + JPA/Hibernate"],
+      rows: [
+        ["Définir modèle", "const schema = new Schema({name: String, age: Number})", "@Entity class User { @Column private String name; private int age; }"],
+        ["Créer repository", "const User = mongoose.model('User', schema)", "interface UserRepository extends JpaRepository<User, Long> {}"],
+        ["Lire tous", "User.find()", "userRepository.findAll()"],
+        ["Lire par ID", "User.findById(id)", "userRepository.findById(id)"],
+        ["Créer", "User.create({name: 'Alice', age: 25})", "userRepository.save(user)"],
+        ["Mettre à jour", "User.findByIdAndUpdate(id, {age: 26})", "userRepository.save(user)"],
+        ["Supprimer", "User.deleteOne({_id: id})", "userRepository.deleteById(id)"],
+        ["Filtrer", "User.find({age: {$gt: 18}})", "userRepository.findByAgeGreaterThan(18)"],
+        ["Trier", "User.find().sort({name: 1})", "userRepository.findAll(Sort.by('name'))"],
+        ["Limiter résultats", "User.find().limit(10)", "PageRequest.of(0, 10)"]
+      ]
+    }
+  },
+  {
+    id: 28,
+    title: "JavaScript vs PHP vs Java - Fonctions courantes",
+    type: "table",
+    data: {
+      headers: ["Opération", "JavaScript", "PHP", "Java"],
+      rows: [
+        ["Longueur string", "str.length", "strlen($str)", "str.length()"],
+        ["Longueur array", "arr.length", "count($arr)", "arr.length ou list.size()"],
+        ["Majuscules", "str.toUpperCase()", "strtoupper($str)", "str.toUpperCase()"],
+        ["Minuscules", "str.toLowerCase()", "strtolower($str)", "str.toLowerCase()"],
+        ["Substring", "str.substring(0, 5)", "substr($str, 0, 5)", "str.substring(0, 5)"],
+        ["Remplacer", "str.replace('a', 'b')", "str_replace('a', 'b', $str)", "str.replace('a', 'b')"],
+        ["Split string", "str.split(',')", "explode(',', $str)", "str.split(',')"],
+        ["Join array", "arr.join(',')", "implode(',', $arr)", "String.join(',', arr)"],
+        ["Ajouter à array", "arr.push(item)", "$arr[] = $item", "list.add(item)"],
+        ["Filtrer array", "arr.filter(x => x > 5)", "array_filter($arr, fn($x) => $x > 5)", "list.stream().filter(x -> x > 5).collect()"],
+        ["Map array", "arr.map(x => x * 2)", "array_map(fn($x) => $x * 2, $arr)", "list.stream().map(x -> x * 2).collect()"],
+        ["Trouver dans array", "arr.find(x => x > 5)", "array_filter($arr, fn($x) => $x > 5)[0]", "list.stream().filter(x -> x > 5).findFirst()"],
+        ["Trier array", "arr.sort()", "sort($arr)", "Collections.sort(list)"],
+        ["Vérifier existence", "arr.includes(item)", "in_array($item, $arr)", "list.contains(item)"],
+        ["Concaténer", "str1 + str2", "$str1 . $str2", "str1 + str2 ou str1.concat(str2)"],
+        ["Arrondir nombre", "Math.round(4.7)", "round(4.7)", "Math.round(4.7)"],
+        ["Nombre aléatoire", "Math.random()", "rand() ou random_int()", "Math.random() ou Random.nextInt()"],
+        ["Valeur absolue", "Math.abs(-5)", "abs(-5)", "Math.abs(-5)"],
+        ["Parse int", "parseInt('42')", "intval('42')", "Integer.parseInt('42')"],
+        ["Parse float", "parseFloat('3.14')", "floatval('3.14')", "Double.parseDouble('3.14')"]
+      ]
+    }
+  },
+  {
+    id: 29,
+    title: "JavaScript vs PHP vs Java - Syntaxe fondamentale",
+    type: "table",
+    data: {
+      headers: ["Concept", "JavaScript", "PHP", "Java"],
+      rows: [
+        ["Variable immutable", "const x = 5", "Non natif (define pour constantes)", "final int x = 5"],
+        ["Variable mutable", "let x = 5", "$x = 5", "int x = 5"],
+        ["Variable globale (legacy)", "var x = 5", "$x = 5 (global scope)", "Non recommandé"],
+        ["Fonction", "function add(a, b) { return a + b; }", "function add($a, $b) { return $a + $b; }", "public int add(int a, int b) { return a + b; }"],
+        ["Arrow function", "const add = (a, b) => a + b", "fn($a, $b) => $a + $b (PHP 7.4+)", "Non natif (lambda: (a, b) -> a + b)"],
+        ["If/Else", "if (x > 5) { } else { }", "if ($x > 5) { } else { }", "if (x > 5) { } else { }"],
+        ["Switch", "switch(x) { case 1: break; default: }", "switch($x) { case 1: break; default: }", "switch(x) { case 1: break; default: }"],
+        ["For loop", "for (let i = 0; i < 10; i++) { }", "for ($i = 0; $i < 10; $i++) { }", "for (int i = 0; i < 10; i++) { }"],
+        ["For each", "arr.forEach(item => { })", "foreach ($arr as $item) { }", "for (Item item : list) { }"],
+        ["While loop", "while (x < 10) { x++; }", "while ($x < 10) { $x++; }", "while (x < 10) { x++; }"],
+        ["Ternaire", "x > 5 ? 'oui' : 'non'", "$x > 5 ? 'oui' : 'non'", "x > 5 ? 'oui' : 'non'"],
+        ["Try/Catch", "try { } catch (e) { }", "try { } catch (Exception $e) { }", "try { } catch (Exception e) { }"],
+        ["Classe", "class User { constructor(name) { this.name = name; } }", "class User { public function __construct($name) { $this->name = $name; } }", "public class User { private String name; public User(String name) { this.name = name; } }"],
+        ["Commentaire ligne", "// commentaire", "// commentaire", "// commentaire"],
+        ["Commentaire bloc", "/* commentaire */", "/* commentaire */", "/* commentaire */"],
+        ["Print/Echo", "console.log('Hello')", "echo 'Hello'", "System.out.println('Hello')"],
+        ["Null check", "if (x === null)", "if ($x === null)", "if (x == null)"],
+        ["Type check", "typeof x === 'string'", "is_string($x)", "x instanceof String"]
       ]
     }
   }

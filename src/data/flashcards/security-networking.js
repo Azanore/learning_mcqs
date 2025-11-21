@@ -305,5 +305,169 @@ export const securityNetworkingFlashcards = [
     front: "Qu'est-ce que GraphQL vs REST ?",
     back: "GraphQL: requête flexible avec un endpoint. REST: endpoints multiples avec structure fixe",
     needsReview: false
+  },
+
+  // NOUVELLES FLASHCARDS - Base (16 flashcards - 80%)
+  {
+    id: "security-networking-38",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un VPN ?",
+    back: "Virtual Private Network, crée une connexion sécurisée et chiffrée sur un réseau public",
+    needsReview: false
+  },
+  {
+    id: "security-networking-39",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une attaque DDoS ?",
+    back: "Distributed Denial of Service, surcharge un serveur avec du trafic pour le rendre indisponible",
+    needsReview: false
+  },
+  {
+    id: "security-networking-40",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un mot de passe fort ?",
+    back: "Combinaison longue (12+ caractères) avec majuscules, minuscules, chiffres et symboles",
+    needsReview: false
+  },
+  {
+    id: "security-networking-41",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le phishing ?",
+    back: "Technique d'escroquerie visant à obtenir des informations sensibles en se faisant passer pour une entité de confiance",
+    needsReview: false
+  },
+  {
+    id: "security-networking-42",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un malware ?",
+    back: "Logiciel malveillant conçu pour endommager ou infiltrer un système informatique",
+    needsReview: false
+  },
+  {
+    id: "security-networking-43",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une requête DELETE en HTTP ?",
+    back: "Méthode HTTP pour supprimer une ressource sur le serveur",
+    needsReview: false
+  },
+  {
+    id: "security-networking-44",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 200 ?",
+    back: "Code indiquant que la requête a réussi",
+    needsReview: false
+  },
+  {
+    id: "security-networking-45",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 500 ?",
+    back: "Erreur serveur interne, problème côté serveur",
+    needsReview: false
+  },
+  {
+    id: "security-networking-46",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 401 ?",
+    back: "Non autorisé, authentification requise",
+    needsReview: false
+  },
+  {
+    id: "security-networking-47",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 403 ?",
+    back: "Interdit, accès refusé même avec authentification",
+    needsReview: false
+  },
+  {
+    id: "security-networking-48",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une adresse IPv4 ?",
+    back: "Format d'adresse IP avec 4 nombres séparés par des points (ex: 192.168.1.1)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-49",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le port 80 ?",
+    back: "Port par défaut pour le protocole HTTP",
+    needsReview: false
+  },
+  {
+    id: "security-networking-50",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le port 443 ?",
+    back: "Port par défaut pour le protocole HTTPS",
+    needsReview: false
+  },
+  {
+    id: "security-networking-51",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un ransomware ?",
+    back: "Malware qui chiffre les données et demande une rançon pour les déchiffrer",
+    needsReview: false
+  },
+  {
+    id: "security-networking-52",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une session utilisateur ?",
+    back: "Période pendant laquelle un utilisateur est authentifié et actif sur une application",
+    needsReview: false
+  },
+  {
+    id: "security-networking-53",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un header HTTP ?",
+    back: "Métadonnées envoyées avec une requête ou réponse HTTP (ex: Content-Type, Authorization)",
+    needsReview: false
+  },
+
+  // NOUVELLES FLASHCARDS - Junior (4 flashcards - 20%)
+  {
+    id: "security-networking-54",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce que OAuth 2.0 ?",
+    back: "Protocole d'autorisation permettant à une application d'accéder aux ressources d'un utilisateur sans exposer ses identifiants",
+    needsReview: false
+  },
+  {
+    id: "security-networking-55",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Différence entre session et token ?",
+    back: "Session: stockée côté serveur. Token (JWT): stocké côté client, stateless",
+    needsReview: false
+  },
+  {
+    id: "security-networking-56",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le rate limiting ?",
+    back: "Limitation du nombre de requêtes qu'un client peut faire dans un temps donné pour prévenir les abus",
+    needsReview: false
+  },
+  {
+    id: "security-networking-57",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'un certificat auto-signé ?",
+    back: "Certificat SSL/TLS signé par son créateur plutôt que par une autorité de certification reconnue",
+    needsReview: false
   }
 ];

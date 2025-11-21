@@ -602,34 +602,50 @@ body {
   gap: var(--spacing-lg);
 }
 
-.map-selector {
+.map-selector-wrapper {
   display: flex;
-  gap: var(--spacing-xs);
-  overflow-x: auto;
-  padding-bottom: var(--spacing-xs);
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
-.map-tab {
+.map-search {
   padding: var(--spacing-sm) var(--spacing-lg);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.map-search:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.map-search::placeholder {
   color: var(--color-text-secondary);
+  opacity: 0.6;
+}
+
+.map-dropdown {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.2s;
+  transition: border-color 0.2s;
 }
 
-.map-tab:hover {
-  background: var(--color-bg);
+.map-dropdown:hover {
   border-color: var(--color-text-secondary);
 }
 
-.map-tab.active {
-  background: var(--color-primary);
-  color: white;
+.map-dropdown:focus {
+  outline: none;
   border-color: var(--color-primary);
 }
 
@@ -709,5 +725,18 @@ body {
 
   .card-content {
     font-size: 1.125rem;
+  }
+
+  .map-selector-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .map-search {
+    flex: 1;
+  }
+
+  .map-dropdown {
+    flex: 2;
   }
 }

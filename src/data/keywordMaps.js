@@ -418,5 +418,40 @@ export const keywordMaps = [
         ["Cas d'usage", "APIs simples, CRUD", "Apps complexes, données relationnelles"]
       ]
     }
+  },
+  {
+    id: 26,
+    title: "Protocoles et Ports par défaut",
+    type: "table",
+    data: {
+      headers: ["Protocole", "Port", "Catégorie", "Usage"],
+      rows: [
+        ["HTTP", "80", "Web", "Navigation web non sécurisée"],
+        ["HTTPS", "443", "Web/Sécurisé", "Navigation web chiffrée (SSL/TLS)"],
+        ["FTP", "21", "Transfert fichiers", "Transfert de fichiers (non sécurisé)"],
+        ["FTPS", "990", "Transfert fichiers/Sécurisé", "FTP avec chiffrement SSL/TLS"],
+        ["SSH", "22", "Administration/Sécurisé", "Connexion shell sécurisée, SFTP"],
+        ["Telnet", "23", "Administration", "Connexion shell (obsolète, non sécurisé)"],
+        ["SMTP", "25", "Email (envoi)", "Envoi d'emails entre serveurs"],
+        ["DNS", "53", "Résolution noms", "Convertir noms de domaine en IP"],
+        ["DHCP", "67/68", "Configuration réseau", "Attribution automatique d'IP"],
+        ["TFTP", "69", "Transfert fichiers simple", "Transfert simple sans authentification"],
+        ["POP3", "110", "Email (réception)", "Télécharger emails (supprime du serveur)"],
+        ["IMAP", "143", "Email (réception)", "Synchroniser emails (garde sur serveur)"],
+        ["SNMP", "161", "Monitoring réseau", "Surveiller équipements réseau"],
+        ["LDAP", "389", "Annuaire", "Annuaire d'entreprise (Active Directory)"],
+        ["LDAPS", "636", "Annuaire/Sécurisé", "LDAP avec chiffrement SSL"],
+        ["SMB", "445", "Partage fichiers Windows", "Partage de fichiers/imprimantes Windows"],
+        ["SMTP SSL/TLS", "465/587", "Email sécurisé", "Envoi d'emails chiffré"],
+        ["MySQL", "3306", "Base de données", "Connexion à base MySQL/MariaDB"],
+        ["PostgreSQL", "5432", "Base de données", "Connexion à base PostgreSQL"],
+        ["MongoDB", "27017", "Base de données NoSQL", "Connexion à base MongoDB"],
+        ["Redis", "6379", "Cache/Base de données", "Cache en mémoire, sessions"],
+        ["RDP", "3389", "Bureau à distance Windows", "Contrôle à distance Windows"],
+        ["VNC", "5900", "Bureau à distance", "Contrôle à distance multi-plateforme"],
+        ["Docker", "2375/2376", "Containerisation", "API Docker (2376 avec TLS)"],
+        ["Kubernetes API", "6443", "Orchestration", "API Kubernetes (kubectl)"]
+      ]
+    }
   }
 ];

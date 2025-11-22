@@ -325,5 +325,225 @@ export const devopsToolsFlashcards = [
     front: "Qu'est-ce qu'une Dead Letter Queue ?",
     back: "Une queue qui reçoit les messages qui n'ont pas pu être traités ou livrés",
     needsReview: false
+  },
+
+  // Expansion Phase 3 - Base (22 flashcards)
+  {
+    id: "devops-tools-39",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Commande kubectl pour créer des ressources depuis un fichier YAML ?",
+    back: "kubectl apply -f fichier.yaml",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-40",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Commande kubectl pour voir les logs d'un Pod ?",
+    back: "kubectl logs nom-du-pod",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-41",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Commande kubectl pour supprimer un Pod ?",
+    back: "kubectl delete pod nom-du-pod",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-42",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que CI/CD ?",
+    back: "Continuous Integration / Continuous Deployment, automatisation du build, test et déploiement",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-43",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Docker Compose ?",
+    back: "Outil pour définir et exécuter des applications multi-conteneurs avec un fichier YAML",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-44",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que GitLab CI ?",
+    back: "Outil d'intégration continue intégré à GitLab, configuré via .gitlab-ci.yml",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-45",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que GitHub Actions ?",
+    back: "Plateforme CI/CD de GitHub pour automatiser les workflows avec des fichiers YAML",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-46",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Terraform ?",
+    back: "Outil d'Infrastructure as Code (IaC) pour provisionner et gérer l'infrastructure",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-47",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Ansible ?",
+    back: "Outil d'automatisation pour la configuration, le déploiement et l'orchestration",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-48",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Prometheus ?",
+    back: "Système de monitoring et d'alerting open-source avec base de données time-series",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-49",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Grafana ?",
+    back: "Plateforme de visualisation et d'analyse de métriques avec dashboards",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-50",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Maven ?",
+    back: "Outil de build et de gestion de dépendances pour projets Java",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-51",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Gradle ?",
+    back: "Outil de build flexible pour Java, Kotlin et Android avec DSL Groovy/Kotlin",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-52",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un artifact repository ?",
+    back: "Dépôt centralisé pour stocker les binaires et dépendances (Nexus, Artifactory)",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-53",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que l'ELK Stack ?",
+    back: "Elasticsearch, Logstash, Kibana - stack pour la gestion et visualisation de logs",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-54",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'Elasticsearch ?",
+    back: "Moteur de recherche et d'analyse distribué basé sur Lucene",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-55",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Logstash ?",
+    back: "Pipeline de traitement de données pour collecter, transformer et envoyer des logs",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-56",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce que Kibana ?",
+    back: "Interface de visualisation pour explorer les données Elasticsearch",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-57",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un ReplicaSet en Kubernetes ?",
+    back: "Contrôleur qui maintient un nombre spécifié de réplicas de Pods identiques",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-58",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un PersistentVolume (PV) ?",
+    back: "Stockage provisionné dans le cluster, indépendant du cycle de vie des Pods",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-59",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Fichier de configuration Docker Compose ?",
+    back: "docker-compose.yml",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-60",
+    deck: "DevOps-tools",
+    difficulty: "Base",
+    front: "Commande pour démarrer les services Docker Compose ?",
+    back: "docker-compose up",
+    needsReview: false
+  },
+
+  // Expansion Phase 3 - Junior (5 flashcards)
+  {
+    id: "devops-tools-61",
+    deck: "DevOps-tools",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'un DaemonSet en Kubernetes ?",
+    back: "Contrôleur qui assure qu'un Pod s'exécute sur tous (ou certains) Nodes",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-62",
+    deck: "DevOps-tools",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'une stratégie Rolling Update ?",
+    back: "Mise à jour progressive des Pods un par un pour éviter les interruptions",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-63",
+    deck: "DevOps-tools",
+    difficulty: "Junior",
+    front: "Différence entre Terraform et Ansible ?",
+    back: "Terraform provisionne l'infrastructure (IaC). Ansible configure les serveurs (automation)",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-64",
+    deck: "DevOps-tools",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'un playbook Ansible ?",
+    back: "Fichier YAML définissant les tâches d'automatisation à exécuter",
+    needsReview: false
+  },
+  {
+    id: "devops-tools-65",
+    deck: "DevOps-tools",
+    difficulty: "Junior",
+    front: "Comment Prometheus collecte-t-il les métriques ?",
+    back: "Par scraping (pull) des endpoints HTTP exposés par les applications",
+    needsReview: false
   }
 ];

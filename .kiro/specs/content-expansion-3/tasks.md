@@ -42,7 +42,7 @@
   - Follow 80% Base, 20% Junior distribution
   - _Requirements: 1.1, 1.4, 1.5, 2.1, 3.4, 4.1-4.6, 5.1-5.5, 7.4, 8.1-8.5, 9.4_
 
-- [ ] 3.2 Expand DevOps Tools flashcards
+- [x] 3.2 Expand DevOps Tools flashcards
   - Read existing src/data/flashcards/devops-tools.js (38 flashcards)
   - Read existing src/data/mcqs/devops-tools.js (25 MCQs) for gap analysis
   - Identify concepts in MCQs but missing from flashcards

@@ -333,5 +333,217 @@ export const fundamentalsFlashcards = [
     front: "Qu'est-ce que le principe DRY ?",
     back: "Don't Repeat Yourself: éviter la duplication de code en créant des abstractions",
     needsReview: false
+  },
+
+  // Expansion Phase 3 - Base (21 flashcards)
+  {
+    id: "fundamentals-40",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une liste chaînée (linked list) ?",
+    back: "Structure de données où chaque élément pointe vers le suivant",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-41",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un graphe en informatique ?",
+    back: "Structure de données composée de nœuds (sommets) reliés par des arêtes",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-42",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que la complexité O(1) ?",
+    back: "Temps d'exécution constant, indépendant de la taille des données",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-43",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que l'encapsulation en POO ?",
+    back: "Regroupement des données et méthodes, cachant les détails internes",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-44",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que l'héritage en POO ?",
+    back: "Mécanisme où une classe enfant hérite des propriétés et méthodes d'une classe parent",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-45",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que le polymorphisme en POO ?",
+    back: "Capacité d'un objet à prendre plusieurs formes (surcharge, redéfinition)",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-46",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une classe en POO ?",
+    back: "Modèle (template) définissant les propriétés et comportements d'objets",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-47",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un objet en POO ?",
+    back: "Instance d'une classe avec ses propres valeurs d'attributs",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-48",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un test unitaire ?",
+    back: "Test vérifiant le bon fonctionnement d'une unité de code isolée (fonction, méthode)",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-49",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que TDD (Test-Driven Development) ?",
+    back: "Méthode où on écrit les tests avant le code de production",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-50",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une API ?",
+    back: "Interface de Programmation d'Application, permet la communication entre logiciels",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-51",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que la recherche linéaire ?",
+    back: "Algorithme parcourant séquentiellement chaque élément jusqu'à trouver la cible",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-52",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que la recherche binaire ?",
+    back: "Algorithme de recherche dans un tableau trié en divisant par deux à chaque étape",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-53",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Set (ensemble) ?",
+    back: "Collection de valeurs uniques sans doublons",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-54",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un dictionnaire (Map) ?",
+    back: "Structure de données stockant des paires clé-valeur",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-55",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que la normalisation en base de données ?",
+    back: "Processus d'organisation des données pour réduire la redondance",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-56",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Que signifie ACID en base de données ?",
+    back: "Atomicity, Consistency, Isolation, Durability - propriétés des transactions",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-57",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une transaction en base de données ?",
+    back: "Séquence d'opérations exécutées comme une unité indivisible",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-58",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un commit en Git ?",
+    back: "Sauvegarde d'un ensemble de modifications avec un message descriptif",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-59",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une branche en Git ?",
+    back: "Ligne de développement indépendante permettant de travailler sans affecter le code principal",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-60",
+    deck: "Fundamentals",
+    difficulty: "Base",
+    front: "Qu'est-ce que Agile ?",
+    back: "Méthodologie de développement itérative et collaborative avec livraisons fréquentes",
+    needsReview: false
+  },
+
+  // Expansion Phase 3 - Junior (5 flashcards)
+  {
+    id: "fundamentals-61",
+    deck: "Fundamentals",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le principe SOLID (S) ?",
+    back: "Single Responsibility: une classe doit avoir une seule raison de changer",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-62",
+    deck: "Fundamentals",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le design pattern Singleton ?",
+    back: "Pattern garantissant qu'une classe n'a qu'une seule instance globale",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-63",
+    deck: "Fundamentals",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le design pattern Factory ?",
+    back: "Pattern créant des objets sans spécifier leur classe exacte",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-64",
+    deck: "Fundamentals",
+    difficulty: "Junior",
+    front: "Qu'est-ce que la complexité O(log n) ?",
+    back: "Temps d'exécution croissant logarithmiquement (ex: recherche binaire)",
+    needsReview: false
+  },
+  {
+    id: "fundamentals-65",
+    deck: "Fundamentals",
+    difficulty: "Junior",
+    front: "Différence entre test unitaire et test d'intégration ?",
+    back: "Unitaire: teste une unité isolée. Intégration: teste l'interaction entre composants",
+    needsReview: false
   }
 ];

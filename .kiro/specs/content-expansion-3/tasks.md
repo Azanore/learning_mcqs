@@ -53,7 +53,7 @@
 
 - [ ] 4. Expand Core Concepts (Batch 4)
 
-- [ ] 4.1 Expand Fundamentals flashcards
+- [x] 4.1 Expand Fundamentals flashcards
   - Read existing src/data/flashcards/fundamentals.js (39 flashcards)
   - Read existing src/data/mcqs/fundamentals.js (25 MCQs) for gap analysis
   - Identify concepts in MCQs but missing from flashcards

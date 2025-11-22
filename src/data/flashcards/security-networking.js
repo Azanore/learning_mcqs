@@ -469,5 +469,209 @@ export const securityNetworkingFlashcards = [
     front: "Qu'est-ce qu'un certificat auto-signé ?",
     back: "Certificat SSL/TLS signé par son créateur plutôt que par une autorité de certification reconnue",
     needsReview: false
+  },
+
+  // Expansion Phase 3 - Base (18 flashcards)
+  {
+    id: "security-networking-58",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 301 ?",
+    back: "Redirection permanente vers une nouvelle URL",
+    needsReview: false
+  },
+  {
+    id: "security-networking-59",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 400 ?",
+    back: "Bad Request, la requête est mal formée",
+    needsReview: false
+  },
+  {
+    id: "security-networking-60",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un code de statut HTTP 503 ?",
+    back: "Service Unavailable, le serveur est temporairement indisponible",
+    needsReview: false
+  },
+  {
+    id: "security-networking-61",
+    deck: "Security-networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le header Content-Type ?",
+    back: "Indique le type de média du corps de la requête ou réponse (ex: application/json)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-62",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que Basic Authentication ?",
+    back: "Méthode d'authentification HTTP envoyant username:password encodé en Base64",
+    needsReview: false
+  },
+  {
+    id: "security-networking-63",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Bearer token ?",
+    back: "Token d'authentification envoyé dans le header Authorization: Bearer <token>",
+    needsReview: false
+  },
+  {
+    id: "security-networking-64",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que AES ?",
+    back: "Advanced Encryption Standard, algorithme de chiffrement symétrique très utilisé",
+    needsReview: false
+  },
+  {
+    id: "security-networking-65",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que RSA ?",
+    back: "Algorithme de chiffrement asymétrique utilisant une paire de clés publique/privée",
+    needsReview: false
+  },
+  {
+    id: "security-networking-66",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que SHA-256 ?",
+    back: "Algorithme de hachage cryptographique produisant une empreinte de 256 bits",
+    needsReview: false
+  },
+  {
+    id: "security-networking-67",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une adresse IPv6 ?",
+    back: "Format d'adresse IP avec 128 bits, notation hexadécimale (ex: 2001:0db8::1)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-68",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une adresse MAC ?",
+    back: "Media Access Control, identifiant physique unique d'une carte réseau",
+    needsReview: false
+  },
+  {
+    id: "security-networking-69",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le port 22 ?",
+    back: "Port par défaut pour SSH (Secure Shell)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-70",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce que le port 3306 ?",
+    back: "Port par défaut pour MySQL",
+    needsReview: false
+  },
+  {
+    id: "security-networking-71",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une autorité de certification (CA) ?",
+    back: "Entité de confiance qui émet et signe les certificats SSL/TLS",
+    needsReview: false
+  },
+  {
+    id: "security-networking-72",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un trojan (cheval de Troie) ?",
+    back: "Malware déguisé en logiciel légitime pour tromper l'utilisateur",
+    needsReview: false
+  },
+  {
+    id: "security-networking-73",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un spyware ?",
+    back: "Logiciel malveillant qui collecte des informations sur l'utilisateur à son insu",
+    needsReview: false
+  },
+  {
+    id: "security-networking-74",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'une requête OPTIONS en HTTP ?",
+    back: "Méthode HTTP pour demander les méthodes supportées par le serveur (utilisée pour CORS)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-75",
+    deck: "Security-Networking",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un subnet mask ?",
+    back: "Masque définissant quelle partie d'une adresse IP identifie le réseau vs l'hôte",
+    needsReview: false
+  },
+
+  // Expansion Phase 3 - Junior (7 flashcards)
+  {
+    id: "security-networking-76",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'une requête preflight CORS ?",
+    back: "Requête OPTIONS envoyée avant la vraie requête pour vérifier les permissions CORS",
+    needsReview: false
+  },
+  {
+    id: "security-networking-77",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Différence entre TLS 1.2 et TLS 1.3 ?",
+    back: "TLS 1.3 est plus rapide (moins de round-trips) et plus sécurisé (supprime algorithmes faibles)",
+    needsReview: false
+  },
+  {
+    id: "security-networking-78",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'un IDS (Intrusion Detection System) ?",
+    back: "Système qui surveille le réseau pour détecter les activités suspectes ou malveillantes",
+    needsReview: false
+  },
+  {
+    id: "security-networking-79",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Différence entre IDS et IPS ?",
+    back: "IDS détecte et alerte. IPS (Intrusion Prevention System) détecte et bloque automatiquement",
+    needsReview: false
+  },
+  {
+    id: "security-networking-80",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le header Access-Control-Allow-Origin ?",
+    back: "Header CORS spécifiant quels domaines peuvent accéder à la ressource",
+    needsReview: false
+  },
+  {
+    id: "security-networking-81",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce qu'une attaque Man-in-the-Middle (MITM) ?",
+    back: "Interception des communications entre deux parties pour espionner ou modifier les données",
+    needsReview: false
+  },
+  {
+    id: "security-networking-82",
+    deck: "Security-Networking",
+    difficulty: "Junior",
+    front: "Qu'est-ce que le principe Zero Trust ?",
+    back: "Modèle de sécurité où aucune entité n'est automatiquement fiable, tout doit être vérifié",
+    needsReview: false
   }
 ];

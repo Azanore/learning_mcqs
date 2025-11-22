@@ -33,7 +33,7 @@
 
 - [ ] 3. Expand Security & Operations (Batch 3)
 
-- [ ] 3.1 Expand Security & Networking flashcards
+- [x] 3.1 Expand Security & Networking flashcards
   - Read existing src/data/flashcards/security-networking.js (57 flashcards)
   - Read existing src/data/mcqs/security-networking.js (24 MCQs) for gap analysis
   - Identify concepts in MCQs but missing from flashcards

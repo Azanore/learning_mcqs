@@ -11,7 +11,7 @@
   - Follow 80% Base, 20% Junior distribution
   - _Requirements: 1.1, 1.4, 1.5, 2.1, 3.2, 4.1-4.6, 5.1-5.5, 7.2, 8.1-8.5, 9.2_
 
-- [ ] 1.2 Expand Spring & Hibernate flashcards
+- [x] 1.2 Expand Spring & Hibernate flashcards
   - Read existing src/data/flashcards/spring-hibernate.js (34 flashcards)
   - Read existing src/data/mcqs/spring-hibernate.js (21 MCQs) for gap analysis
   - Identify concepts in MCQs but missing from flashcards

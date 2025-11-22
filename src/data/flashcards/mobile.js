@@ -315,5 +315,233 @@ export const mobileFlashcards = [
     front: "Qu'est-ce que BLoC en Flutter ?",
     back: "Business Logic Component, un pattern de gestion d'état avec streams",
     needsReview: false
+  },
+
+  // Expansion Phase 3 - Base (22 flashcards)
+  {
+    id: "mobile-38",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Ordre du cycle de vie d'une Activity Android ?",
+    back: "onCreate() → onStart() → onResume() → onPause() → onStop() → onDestroy()",
+    needsReview: false
+  },
+  {
+    id: "mobile-39",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un LinearLayout en Android ?",
+    back: "Un layout qui organise les vues en ligne (horizontal) ou colonne (vertical)",
+    needsReview: false
+  },
+  {
+    id: "mobile-40",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Comment déclarer une variable nullable en Kotlin ?",
+    back: "Ajouter ? après le type : var name: String?",
+    needsReview: false
+  },
+  {
+    id: "mobile-41",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce que LiveData en Android ?",
+    back: "Un observable lifecycle-aware pour les données UI",
+    needsReview: false
+  },
+  {
+    id: "mobile-42",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Comment unwrap un Optional en Swift de manière sûre ?",
+    back: "Utiliser if let : if let value = optional { }",
+    needsReview: false
+  },
+  {
+    id: "mobile-43",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce que UITableViewDelegate en iOS ?",
+    back: "Un protocole qui gère les interactions utilisateur dans un UITableView",
+    needsReview: false
+  },
+  {
+    id: "mobile-44",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Quel composant React Native pour un bouton ?",
+    back: "<Button>, <TouchableOpacity> ou <Pressable>",
+    needsReview: false
+  },
+  {
+    id: "mobile-45",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Comment importer une image locale en React Native ?",
+    back: "<Image source={require('./image.png')} />",
+    needsReview: false
+  },
+  {
+    id: "mobile-46",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "La propriété float existe-t-elle en React Native ?",
+    back: "Non, utiliser flexbox pour le positionnement",
+    needsReview: false
+  },
+  {
+    id: "mobile-47",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Quelle méthode doit retourner un StatelessWidget ?",
+    back: "build() qui retourne le widget tree",
+    needsReview: false
+  },
+  {
+    id: "mobile-48",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Comment centrer un widget en Flutter ?",
+    back: "Utiliser Center(child: widget)",
+    needsReview: false
+  },
+  {
+    id: "mobile-49",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Quel widget Flutter organise les enfants en colonne ?",
+    back: "Column (vertical) ou Row (horizontal)",
+    needsReview: false
+  },
+  {
+    id: "mobile-50",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Fichier de dépendances Flutter ?",
+    back: "pubspec.yaml",
+    needsReview: false
+  },
+  {
+    id: "mobile-51",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Future en Dart ?",
+    back: "Une valeur qui sera disponible dans le futur (asynchrone)",
+    needsReview: false
+  },
+  {
+    id: "mobile-52",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un ConstraintLayout en Android ?",
+    back: "Un layout flexible qui positionne les vues avec des contraintes",
+    needsReview: false
+  },
+  {
+    id: "mobile-53",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce que Room en Android ?",
+    back: "Une bibliothèque de persistance qui fournit une abstraction sur SQLite",
+    needsReview: false
+  },
+  {
+    id: "mobile-54",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un guard statement en Swift ?",
+    back: "Un early exit qui vérifie une condition et sort si elle n'est pas remplie",
+    needsReview: false
+  },
+  {
+    id: "mobile-55",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Container en Flutter ?",
+    back: "Un widget qui combine padding, margin, decoration et contraintes",
+    needsReview: false
+  },
+  {
+    id: "mobile-56",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Stack en Flutter ?",
+    back: "Un widget qui empile ses enfants les uns sur les autres",
+    needsReview: false
+  },
+  {
+    id: "mobile-57",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Comment gérer l'async en Dart ?",
+    back: "Utiliser async/await avec Future",
+    needsReview: false
+  },
+  {
+    id: "mobile-58",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce qu'un Stream en Dart ?",
+    back: "Une séquence asynchrone de données (événements multiples)",
+    needsReview: false
+  },
+  {
+    id: "mobile-59",
+    deck: "Mobile",
+    difficulty: "Base",
+    front: "Qu'est-ce que Provider en Flutter ?",
+    back: "Un package de gestion d'état recommandé par l'équipe Flutter",
+    needsReview: false
+  },
+
+  // Expansion Phase 3 - Junior (6 flashcards)
+  {
+    id: "mobile-60",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Qu'est-ce que les coroutines en Kotlin ?",
+    back: "Un moyen d'écrire du code asynchrone de manière séquentielle (suspend functions)",
+    needsReview: false
+  },
+  {
+    id: "mobile-61",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Différence entre weak et unowned en Swift ?",
+    back: "weak peut être nil (Optional), unowned suppose que la référence existe toujours",
+    needsReview: false
+  },
+  {
+    id: "mobile-62",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Qu'est-ce que la New Architecture de React Native ?",
+    back: "Refonte avec JSI et Fabric pour de meilleures performances",
+    needsReview: false
+  },
+  {
+    id: "mobile-63",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Différence entre main axis et cross axis en Flutter ?",
+    back: "Main axis = direction principale (horizontal pour Row, vertical pour Column), cross axis = perpendiculaire",
+    needsReview: false
+  },
+  {
+    id: "mobile-64",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Comment optimiser une FlatList en React Native ?",
+    back: "getItemLayout, keyExtractor unique, removeClippedSubviews",
+    needsReview: false
+  },
+  {
+    id: "mobile-65",
+    deck: "Mobile",
+    difficulty: "Junior",
+    front: "Différence entre Expo et React Native CLI ?",
+    back: "Expo simplifie le setup mais limite les modules natifs custom. CLI donne plus de contrôle",
+    needsReview: false
   }
 ];

@@ -22,7 +22,7 @@
 
 - [ ] 2. Expand Mobile (Batch 2)
 
-- [ ] 2.1 Expand Mobile flashcards
+- [x] 2.1 Expand Mobile flashcards
   - Read existing src/data/flashcards/mobile.js (37 flashcards)
   - Read existing src/data/mcqs/mobile.js (24 MCQs) for gap analysis
   - Identify concepts in MCQs but missing from flashcards

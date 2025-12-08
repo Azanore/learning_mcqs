@@ -670,20 +670,26 @@ body {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.875rem;
+  table-layout: fixed;
 }
 
 .keyword-table th {
   background: var(--color-bg);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   text-align: left;
   font-weight: 600;
   border-bottom: 2px solid var(--color-border);
+  vertical-align: top;
 }
 
 .keyword-table td {
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
-  line-height: 1.6;
+  line-height: 1.7;
+  word-wrap: break-word;
+  word-break: break-word;
+  vertical-align: top;
+  font-size: 0.8125rem;
 }
 
 .keyword-table tr:last-child td {

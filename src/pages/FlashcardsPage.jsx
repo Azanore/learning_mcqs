@@ -149,6 +149,10 @@ export default function FlashcardsPage() {
 
   return (
     <div className="page">
+      <div>
+        <h2 className="session-title">Mode Flashcards</h2>
+        <p className="log-subtitle mt-1">Répétition espacée — Revoir ou Découvrir, filtrez par leçon.</p>
+      </div>
       <div className="tabs" role="tablist" aria-label="Navigation flashcards">
         <button type="button" role="tab" aria-selected={tab === 'revise'} aria-controls="panel-revise" id="tab-revise" tabIndex={tab === 'revise' ? 0 : -1} className={`tab ${tab === 'revise' ? 'active' : ''}`} onClick={() => setTab('revise')} onKeyDown={(e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); setTab(t => t === 'revise' ? 'explore' : 'revise'); } }}>Réviser</button>
         <button type="button" role="tab" aria-selected={tab === 'explore'} aria-controls="panel-explore" id="tab-explore" tabIndex={tab === 'explore' ? 0 : -1} className={`tab ${tab === 'explore' ? 'active' : ''}`} onClick={() => setTab('explore')} onKeyDown={(e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); setTab(t => t === 'revise' ? 'explore' : 'revise'); } }}>Parcourir</button>

@@ -4,20 +4,59 @@ const KEYS = {
   SETTINGS: 'learning-mcq-settings',
 };
 
+// LS security: availability check, prototype-pollution guard, type validation
+function isStorageAvailable() {
+  try {
+    return typeof localStorage !== 'undefined' && localStorage !== null;
+  } catch {
+    return false;
+  }
+}
+
+function isSafeKey(k) {
+  return k !== '__proto__' && k !== 'constructor' && k !== 'prototype';
+}
+
+function sanitizeCardStates(obj) {
+  if (!obj || typeof obj !== 'object' || Array.isArray(obj)) return {};
+  const out = {};
+  for (const [k, v] of Object.entries(obj)) {
+    if (!isSafeKey(k)) continue;
+    // allow only fc- / mcq- prefixed ids, basic shape check
+    if (!(k.startsWith('fc-') || k.startsWith('mcq-'))) continue;
+    if (!v || typeof v !== 'object') continue;
+    out[k] = v;
+  }
+  return out;
+}
+
 function load(key) {
+  if (!isStorageAvailable()) return null;
   try {
     const raw = localStorage.getItem(key);
-    return raw ? JSON.parse(raw) : null;
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    // type validation per key
+    if (key === KEYS.CARD_STATES) return sanitizeCardStates(parsed);
+    if (key === KEYS.SESSIONS) return Array.isArray(parsed) ? parsed : [];
+    if (key === KEYS.SETTINGS) return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : null;
+    return parsed;
   } catch {
     return null;
   }
 }
 
 function save(key, data) {
+  if (!isStorageAvailable()) return;
   try {
-    localStorage.setItem(key, JSON.stringify(data));
-  } catch {
-    // localStorage full or unavailable
+    // sanitize before saving card states
+    const toSave = key === KEYS.CARD_STATES ? sanitizeCardStates(data) : data;
+    localStorage.setItem(key, JSON.stringify(toSave));
+  } catch (e) {
+    // QuotaExceededError or unavailable — fail silently, optionally log
+    if (e && e.name === 'QuotaExceededError') {
+      try { console.warn('[persistence] LS quota exceeded for', key); } catch (e2) { void e2; }
+    }
   }
 }
 
@@ -74,8 +113,8 @@ export function clearProgress({ scope = 'all' } = {}) {
       });
       save(KEYS.SESSIONS, keep);
     }
-  } catch {
-    // ignore
+  } catch (e) {
+    void e;
   }
 }
 

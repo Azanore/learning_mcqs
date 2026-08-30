@@ -5,6 +5,7 @@ import ProgressBar from '../components/ProgressBar';
 import { useApp } from '../context/AppContext';
 import { useSession } from '../hooks/useSession';
 import { addSession, clearMcqProgress } from '../lib/persistence';
+import { rateCard as rateCardFn } from '../lib/cardState';
 
 const SIZES = [5, 15, 30, 60];
 const DIFFS = ['Base', 'Junior', 'Intermédiaire'];
@@ -57,7 +58,13 @@ export default function MCQPage() {
       difficulties: hasDiffFilter ? selectedDiffs : null,
     });
   };
-  const handleAnswer = (isCorrect) => { session.rate(isCorrect ? 3 : 0); session.advance(); };
+  const handleAnswer = (isCorrect) => {
+    const cur = session.currentCard;
+    if (cur) rateCardFn(cur.id, isCorrect ? 3 : 1);
+    session.rate(isCorrect ? 3 : 0);
+    session.advance();
+    refresh();
+  };
   const handleEnd = () => {
     if (session.stats.reviewed > 0) {
       addSession({

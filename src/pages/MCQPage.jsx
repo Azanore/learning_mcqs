@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Play, ChevronRight, ChevronDown, ChevronUp, Check, RotateCcw } from 'lucide-react';
+import { Play, ChevronRight, ChevronDown, ChevronUp, Check, RotateCcw, Clock, Sparkles } from 'lucide-react';
 import MCQQuestion from '../components/MCQQuestion';
 import ProgressBar from '../components/ProgressBar';
 import { useApp } from '../context/AppContext';
@@ -17,7 +17,7 @@ function loadSet(key, fallback) {
 }
 
 export default function MCQPage() {
-  const { mcqs, mcqTopics, getNewCount, refresh } = useApp();
+  const { mcqs, mcqTopics, getNewCount, getDueCount, refresh } = useApp();
   const session = useSession(mcqs);
 
   const [size, setSize] = useState(15);
@@ -43,6 +43,7 @@ export default function MCQPage() {
   const total = mcqs.length;
   const filteredTotal = filteredForSession.length;
   const newAvailable = getNewCount(filteredForSession);
+  const dueAvailable = getDueCount(filteredForSession);
   const viewed = filteredTotal - newAvailable;
   const viewedPct = filteredTotal > 0 ? (viewed / filteredTotal) * 100 : 0;
   const globalViewed = total - getNewCount(mcqs);
@@ -100,6 +101,7 @@ export default function MCQPage() {
                 <strong><em>{viewedCount}</em> / {totalCount}</strong>
                 <span className="progress-pct">{pct.toFixed(1)}% vues</span>
               </div>
+              <span className="progress-due" aria-label={`${dueAvailable} questions à revoir`}><Clock size={13} aria-hidden /> {dueAvailable} à revoir</span>
             </div>
             <div className="progress-track" role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100} aria-label="Questions vues">
               <div className="progress-fill" style={{ width: `${pct}%` }} />
@@ -119,16 +121,34 @@ export default function MCQPage() {
             </div>
           </section>
 
-          <div className="mode-cards" style={{ gridTemplateColumns: '1fr' }}>
-            <button type="button" className="mode-card" onClick={() => handleStart('mock')} disabled={filteredTotal === 0}>
-              <Play size={18} aria-hidden />
-              <div>
-                <h3>Quiz mélangé</h3>
-                <p>{filteredTotal === 0 ? 'Aucune question' : `${Math.min(size, filteredTotal)} questions · aléatoire`}</p>
-              </div>
-              <ChevronRight size={14} className="faint ml-auto" aria-hidden />
-            </button>
-          </div>
+          <section aria-label="Choisir un mode QCM">
+            <div className="choice-grid">
+              <button type="button" className="choice-card" onClick={() => handleStart('review')} disabled={dueAvailable === 0} aria-describedby="desc-revoir-qcm">
+                <span className="choice-icon" aria-hidden><Clock size={16} /></span>
+                <span className="choice-card-text">
+                  <span className="choice-title">Revoir</span>
+                  <span className="choice-count">{dueAvailable === 0 ? 'Aucune' : `${Math.min(size, dueAvailable)} questions`} <span className="faint">·</span> <span id="desc-revoir-qcm" className="choice-desc">à revoir</span></span>
+                </span>
+                <ChevronRight size={14} className="choice-card-cta" aria-hidden />
+              </button>
+              <button type="button" className="choice-card" onClick={() => handleStart('learn')} disabled={newAvailable === 0} aria-describedby="desc-decouvrir-qcm">
+                <span className="choice-icon" aria-hidden><Sparkles size={16} /></span>
+                <span className="choice-card-text">
+                  <span className="choice-title">Découvrir</span>
+                  <span className="choice-count">{newAvailable === 0 ? 'Aucune' : `${Math.min(size, newAvailable)} questions`} <span className="faint">·</span> <span id="desc-decouvrir-qcm" className="choice-desc">jamais vues</span></span>
+                </span>
+                <ChevronRight size={14} className="choice-card-cta" aria-hidden />
+              </button>
+              <button type="button" className="choice-card" onClick={() => handleStart('mock')} disabled={filteredTotal === 0} aria-describedby="desc-quiz-qcm">
+                <span className="choice-icon" aria-hidden><Play size={16} /></span>
+                <span className="choice-card-text">
+                  <span className="choice-title">Quiz mélangé</span>
+                  <span className="choice-count">{filteredTotal === 0 ? 'Aucune' : `${Math.min(size, filteredTotal)} questions`} <span className="faint">·</span> <span id="desc-quiz-qcm" className="choice-desc">aléatoire</span></span>
+                </span>
+                <ChevronRight size={14} className="choice-card-cta" aria-hidden />
+              </button>
+            </div>
+          </section>
 
           <section className="card-panel" aria-label="Filtres QCM">
             <button type="button" className="filter-toggle" onClick={() => setShowFilters(v => !v)} aria-expanded={showFilters} aria-controls="mcq-filter-panel">

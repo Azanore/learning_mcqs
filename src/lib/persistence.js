@@ -104,14 +104,9 @@ export function clearProgress({ scope = 'all' } = {}) {
       save(KEYS.CARD_STATES, filtered);
     }
     if (scope !== 'all') {
-      // also prune sessions by mode if present
-      const sessions = load(KEYS.SESSIONS) || [];
-      const keep = sessions.filter(s => {
-        if (scope === 'flashcards') return s.mode === 'mock';
-        if (scope === 'mcq') return s.mode !== 'mock';
-        return true;
-      });
-      save(KEYS.SESSIONS, keep);
+      // Scoped clear: card states are filtered above (fc- vs mcq-).
+      // Sessions now share modes (review/learn) for both, so we keep all history
+      // instead of filtering by mode (legacy mock distinction removed with 58fe3cb).
     }
   } catch (e) {
     void e;

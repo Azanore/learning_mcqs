@@ -1,70 +1,51 @@
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
+import { Search } from 'lucide-react';
+import CustomSelect from './CustomSelect';
 
 export default function KeywordMap({ maps }) {
   const [selectedMap, setSelectedMap] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
 
-  if (maps.length === 0) {
-    return <div className="empty-state">Aucune carte disponible</div>;
-  }
+  const indexById = useMemo(() => {
+    const m = new Map();
+    maps.forEach((entry, idx) => m.set(entry.id ?? entry.title, idx));
+    return m;
+  }, [maps]);
 
-  const filteredMaps = maps.filter(m =>
-    m.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredMaps = useMemo(() => maps.filter(m => m.title.toLowerCase().includes(searchTerm.toLowerCase())), [maps, searchTerm]);
 
-  // Si la map sélectionnée n'est plus dans les résultats filtrés, sélectionner la première
-  useEffect(() => {
-    const isSelectedInFiltered = filteredMaps.some(m => maps.indexOf(m) === selectedMap);
-    if (!isSelectedInFiltered && filteredMaps.length > 0) {
-      setSelectedMap(maps.indexOf(filteredMaps[0]));
-    }
-  }, [searchTerm, filteredMaps, selectedMap, maps]);
+  const effectiveIndex = useMemo(() => {
+    const isSelectedInFiltered = filteredMaps.some(m => (indexById.get(m.id ?? m.title) ?? maps.indexOf(m)) === selectedMap);
+    if (!isSelectedInFiltered && filteredMaps.length > 0) return indexById.get(filteredMaps[0].id ?? filteredMaps[0].title) ?? 0;
+    return selectedMap;
+  }, [filteredMaps, selectedMap, indexById, maps]);
 
-  const map = maps[selectedMap];
+  const map = maps[effectiveIndex] ?? maps[0];
+  const options = useMemo(() => filteredMaps.map(m => ({ value: indexById.get(m.id ?? m.title) ?? maps.indexOf(m), label: m.title })), [filteredMaps, indexById, maps]);
+
+  if (maps.length === 0) return <div className="empty-state">Aucune carte disponible</div>;
 
   return (
     <div className="map-container">
       <div className="map-selector-wrapper">
-        <input
-          type="text"
-          placeholder="Rechercher une map..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="map-search"
-        />
-        <select
-          value={selectedMap}
-          onChange={(e) => setSelectedMap(Number(e.target.value))}
+        <label className="search-wrap search-wrap--map" aria-label="Rechercher une carte">
+          <Search size={15} aria-hidden />
+          <input type="text" placeholder="Rechercher une carte…" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="search-input" aria-label="Rechercher" />
+        </label>
+        <CustomSelect
+          value={effectiveIndex}
+          onChange={v => setSelectedMap(Number(v))}
+          ariaLabel="Choisir une carte"
+          options={options.length ? options : [{ value: effectiveIndex, label: map.title }]}
           className="map-dropdown"
-        >
-          {filteredMaps.map((m) => (
-            <option key={m.id} value={maps.indexOf(m)}>
-              {m.title}
-            </option>
-          ))}
-        </select>
+        />
       </div>
-
       <div className="map-content">
         <h2>{map.title}</h2>
         <div className="table-wrapper">
           <table className="keyword-table">
-            <thead>
-              <tr>
-                {map.data.headers.map((header, i) => (
-                  <th key={i}>{header}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {map.data.rows.map((row, i) => (
-                <tr key={i}>
-                  {row.map((cell, j) => (
-                    <td key={j}>{cell}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
+            <thead><tr>{map.data.headers.map((h, i) => <th key={i}>{h}</th>)}</tr></thead>
+            <tbody>{map.data.rows.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>)}</tbody>
           </table>
         </div>
       </div>

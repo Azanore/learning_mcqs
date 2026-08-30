@@ -5,16 +5,16 @@ export default function Navigation() {
   return (
     <nav className="nav">
       <NavLink to="/flashcards" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        <BookOpen size={20} />
+        <BookOpen size={18} />
         <span>Flashcards</span>
       </NavLink>
       <NavLink to="/mcq" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        <CheckSquare size={20} />
+        <CheckSquare size={18} />
         <span>QCM</span>
       </NavLink>
       <NavLink to="/maps" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-        <Map size={20} />
-        <span>Cartes</span>
+        <Map size={18} />
+        <span>Réf.</span>
       </NavLink>
     </nav>
   );

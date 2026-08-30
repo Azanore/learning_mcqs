@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Play, ChevronRight, ChevronDown, ChevronUp, Check, RotateCcw, Clock, Sparkles } from 'lucide-react';
+import { ChevronRight, ChevronDown, ChevronUp, Check, RotateCcw, Clock, Sparkles } from 'lucide-react';
 import MCQQuestion from '../components/MCQQuestion';
 import ProgressBar from '../components/ProgressBar';
 import { useApp } from '../context/AppContext';
@@ -136,14 +136,6 @@ export default function MCQPage() {
                 <span className="choice-card-text">
                   <span className="choice-title">Découvrir</span>
                   <span className="choice-count">{newAvailable === 0 ? 'Aucune' : `${Math.min(size, newAvailable)} questions`} <span className="faint">·</span> <span id="desc-decouvrir-qcm" className="choice-desc">jamais vues</span></span>
-                </span>
-                <ChevronRight size={14} className="choice-card-cta" aria-hidden />
-              </button>
-              <button type="button" className="choice-card" onClick={() => handleStart('mock')} disabled={filteredTotal === 0} aria-describedby="desc-quiz-qcm">
-                <span className="choice-icon" aria-hidden><Play size={16} /></span>
-                <span className="choice-card-text">
-                  <span className="choice-title">Quiz mélangé</span>
-                  <span className="choice-count">{filteredTotal === 0 ? 'Aucune' : `${Math.min(size, filteredTotal)} questions`} <span className="faint">·</span> <span id="desc-quiz-qcm" className="choice-desc">aléatoire</span></span>
                 </span>
                 <ChevronRight size={14} className="choice-card-cta" aria-hidden />
               </button>

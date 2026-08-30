@@ -236,7 +236,7 @@ a{color:inherit}
 /* MCQ sticky bar + bottom sheet — no scroll to CTA on small height */
 .mcq-sticky-bar{position:sticky;bottom:10px;z-index:15;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;background:rgba(17,31,53,.96);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow);margin-top:2px}
 .mcq-sticky-hint{font-size:var(--fs-xs);color:var(--muted);font-weight:600}
-.mcq-sheet-backdrop{position:fixed;inset:0;background:rgba(8,15,30,.56);backdrop-filter:blur(2px);z-index:40}
+.mcq-sheet-backdrop{position:fixed;inset:0;background:rgba(8,15,30,.22);z-index:40}
 .mcq-sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;max-width:720px;margin:0 auto;background:var(--surface-2);border:1px solid var(--border);border-bottom:none;border-radius:var(--r-lg) var(--r-lg) 0 0;box-shadow:var(--shadow-lg);padding:12px 14px calc(12px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:12px;max-height:min(44vh, 380px);overflow:auto;animation:mcq-sheet-in 220ms ease}
 .mcq-sheet-handle{width:32px;height:4px;border-radius:999px;background:var(--border-strong);margin:0 auto 2px;opacity:.7}
 .mcq-sheet-cta{width:100%;min-height:44px;font-size:var(--fs-base);flex-shrink:0}

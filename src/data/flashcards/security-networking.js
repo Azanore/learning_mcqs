@@ -438,7 +438,7 @@ export const securityNetworkingFlashcards = [
   },
   {
     id: "security-networking-61",
-    deck: "Security-networking",
+    deck: "Security-Networking",
     difficulty: "Base",
     front: "Qu'est-ce que le header Content-Type ?",
     back: "Indique le type de média du corps de la requête ou réponse (ex: application/json)"

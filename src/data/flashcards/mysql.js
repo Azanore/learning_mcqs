@@ -74,8 +74,7 @@ export const mysqlFlashcards = [
   { id: "mysql-65", deck: "MySQL", difficulty: "Base", front: "Qu'est-ce que DEFAULT ?", back: "Définit une valeur par défaut pour une colonne si aucune valeur n'est fournie" },
   { id: "mysql-66", deck: "MySQL", difficulty: "Base", front: "Syntaxe pour LIMIT avec OFFSET ?", back: "LIMIT nombre OFFSET décalage (ex: LIMIT 10 OFFSET 20)" },
 
-  // Junior (5 flashcards)
-  { id: "mysql-67", deck: "MySQL", difficulty: "Junior", front: "Qu'est-ce qu'un RIGHT JOIN ?", back: "Retourne toutes les lignes de la table de droite + correspondances de gauche (inverse de LEFT JOIN)" },
+  // Junior (4 flashcards)
   { id: "mysql-68", deck: "MySQL", difficulty: "Junior", front: "Qu'est-ce qu'un CROSS JOIN ?", back: "Produit cartésien : combine chaque ligne de la première table avec chaque ligne de la seconde" },
   { id: "mysql-69", deck: "MySQL", difficulty: "Junior", front: "Que fait COUNT(DISTINCT colonne) ?", back: "Compte le nombre de valeurs uniques (sans doublons) dans une colonne" },
   { id: "mysql-70", deck: "MySQL", difficulty: "Junior", front: "Que fait COALESCE() ?", back: "Retourne la première valeur non NULL dans une liste d'arguments" },

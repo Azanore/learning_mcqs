@@ -1,9 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { CheckCircle, XCircle, Circle, CheckSquare, Square } from 'lucide-react';
 
 export default function MCQQuestion({ question, onAnswer }) {
   const [selectedAnswers, setSelectedAnswers] = useState([]);
   const [showResult, setShowResult] = useState(false);
+  const sheetCtaRef = useRef(null);
+
+  useEffect(() => {
+    if (showResult && sheetCtaRef.current) sheetCtaRef.current.focus();
+  }, [showResult]);
+
+  useEffect(() => {
+    if (!showResult) return;
+    const onKey = (e) => {
+      if (e.key === 'Escape') {
+        const isCorrect =
+          selectedAnswers.length === (question?.correctAnswers?.length ?? 0) &&
+          selectedAnswers.every(a => question.correctAnswers.includes(a));
+        onAnswer(isCorrect, selectedAnswers);
+        setSelectedAnswers([]);
+        setShowResult(false);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [showResult, selectedAnswers, question, onAnswer]);
 
   if (!question) {
     return <div className="empty-state">Aucune question disponible</div>;
@@ -39,7 +60,7 @@ export default function MCQQuestion({ question, onAnswer }) {
     selectedAnswers.every(a => question.correctAnswers.includes(a));
 
   return (
-    <div className={`mcq-container difficulty-${question.difficulty.toLowerCase()}`}>
+    <div className={`mcq-container difficulty-${question.difficulty.toLowerCase()} ${showResult ? 'has-sheet' : ''}`}>
       <div className="card-header">
         <div className="card-info">
           <span className="deck-badge">{question.topic}</span>
@@ -101,23 +122,14 @@ export default function MCQQuestion({ question, onAnswer }) {
         })}
       </div>
 
-      {showResult && (
-        <div className={`mcq-explanation ${isCorrect ? 'correct' : 'wrong'}`}>
-          <div className="explanation-header">
-            {isCorrect ? (
-              <><CheckCircle size={18} /> <strong>Correct !</strong></>
-            ) : (
-              <><XCircle size={18} /> <strong>Incorrect</strong></>
-            )}
-          </div>
-          <p>{question.explanation}</p>
-
-          {/* removed dead loop — no visual output */}
-        </div>
-      )}
-
-      <div className="card-actions">
-        {!showResult ? (
+      {/* sticky Vérifier — always thumb-reachable, no scroll to CTA */}
+      {!showResult && (
+        <div className="mcq-sticky-bar" role="toolbar" aria-label="Valider la réponse">
+          <span className="mcq-sticky-hint" aria-live="polite">
+            {selectedAnswers.length === 0
+              ? 'Sélectionnez une réponse'
+              : `${selectedAnswers.length} sélectionnée${selectedAnswers.length>1?'s':''}`}
+          </span>
           <button
             onClick={handleCheck}
             className="btn-primary"
@@ -125,12 +137,31 @@ export default function MCQQuestion({ question, onAnswer }) {
           >
             Vérifier
           </button>
-        ) : (
-          <button onClick={handleNext} className="btn-primary">
-            Suivant
-          </button>
-        )}
-      </div>
+        </div>
+      )}
+
+      {/* floating result sheet — explanation + Suivant without scrolling page */}
+      {showResult && (
+        <>
+          <div className="mcq-sheet-backdrop" onClick={handleNext} aria-hidden="true" />
+          <div className="mcq-sheet" role="dialog" aria-modal="true" aria-label={isCorrect ? 'Correct' : 'Incorrect'}>
+            <div className="mcq-sheet-handle" aria-hidden="true" />
+            <div className={`mcq-explanation ${isCorrect ? 'correct' : 'wrong'}`} style={{ border: 'none', background: 'transparent', padding: 0, margin: 0 }}>
+              <div className="explanation-header">
+                {isCorrect ? (
+                  <><CheckCircle size={18} /> <strong>Correct !</strong></>
+                ) : (
+                  <><XCircle size={18} /> <strong>Incorrect</strong></>
+                )}
+              </div>
+              <p>{question.explanation}</p>
+            </div>
+            <button ref={sheetCtaRef} onClick={handleNext} className="btn-primary mcq-sheet-cta">
+              Suivant <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 }

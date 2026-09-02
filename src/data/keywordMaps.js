@@ -589,5 +589,35 @@ export const keywordMaps = [
         ["Responsive Breakpoints", "sm: md: lg: xl: 2xl: prefixes", ".{breakpoint}-* (sm|md|lg|xl|xxl)", "✅"]
       ]
     }
+  },
+  {
+    id: 31,
+    title: "UML - Diagrammes essentiels",
+    type: "table",
+    data: {
+      headers: ["Diagramme", "Famille", "But principal", "Cas d'usage typique"],
+      rows: [
+        ["Diagramme de classes", "Structurel", "Représenter les classes, attributs, méthodes et leurs relations", "Modéliser l'architecture objet d'une application"],
+        ["Diagramme de cas d'utilisation", "Comportemental", "Exprimer les fonctionnalités du système du point de vue des utilisateurs", "Recueillir les exigences fonctionnelles avec le client"],
+        ["Diagramme de séquence", "Comportemental", "Montrer l'ordre des échanges de messages entre objets dans le temps", "Modéliser un flux d'authentification, un appel API"],
+        ["Diagramme d'activité", "Comportemental", "Décrire le flux de contrôle d'un processus ou d'un algorithme", "Modéliser un workflow métier, une logique conditionnelle"],
+        ["Diagramme d'états", "Comportemental", "Décrire les états d'un objet et les transitions entre ces états", "Modéliser le cycle de vie d'une commande, d'une connexion"]
+      ]
+    }
+  },
+  {
+    id: 32,
+    title: "UML - Relations dans le diagramme de classes",
+    type: "table",
+    data: {
+      headers: ["Relation", "Notation", "Sens", "Exemple"],
+      rows: [
+        ["Association", "Ligne pleine entre deux classes", "Lien structurel general entre deux classes (utilise ou connait)", "Un Client passe des Commandes"],
+        ["Agrégation", "Ligne pleine avec losange vide cote du tout", "Relation tout-partie faible : la partie peut exister sans le tout", "Un Departement regroupe des Professeurs (les prof survivent si le dpt est supprime)"],
+        ["Composition", "Ligne pleine avec losange plein cote du tout", "Relation tout-partie forte : la partie n'existe pas sans le tout", "Une Maison est composee de Pieces (les pieces disparaissent avec la maison)"],
+        ["Generalisation (heritage)", "Ligne pleine avec fleche triangulaire vide pointant vers le parent", "Relation est-un : la sous-classe herite de la super-classe", "Un Chien est un Animal"],
+        ["Dependance", "Ligne pointillee avec fleche ouverte vers le fournisseur", "Utilisation temporaire et faible : le client depend du fournisseur", "Une classe Rapport utilise une classe PDF en parametre de methode"]
+      ]
+    }
   }
 ];

@@ -18,6 +18,7 @@ import { mobileFlashcards } from './mobile.js';
 import { devopsToolsFlashcards } from './devops-tools.js';
 import { securityNetworkingFlashcards } from './security-networking.js';
 import { fundamentalsFlashcards } from './fundamentals.js';
+import { umlFlashcards } from './uml.js';
 
 function prefix(list, p) { return list.map(c => ({ ...c, id: `${p}-${c.id}` })); }
 
@@ -42,4 +43,5 @@ export const flashcards = [
   ...prefix(devopsToolsFlashcards, 'fc'),
   ...prefix(securityNetworkingFlashcards, 'fc'),
   ...prefix(fundamentalsFlashcards, 'fc'),
+  ...prefix(umlFlashcards, 'fc'),
 ];

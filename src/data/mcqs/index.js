@@ -18,6 +18,7 @@ import { mobileMCQs } from './mobile.js';
 import { devopsToolsMCQs } from './devops-tools.js';
 import { securityNetworkingMCQs } from './security-networking.js';
 import { fundamentalsMCQs } from './fundamentals.js';
+import { umlMCQs } from './uml.js';
 
 function prefix(list, p) { return list.map(c => ({ ...c, id: `${p}-${c.id}` })); }
 
@@ -42,4 +43,5 @@ export const mcqs = [
   ...prefix(devopsToolsMCQs, 'mcq'),
   ...prefix(securityNetworkingMCQs, 'mcq'),
   ...prefix(fundamentalsMCQs, 'mcq'),
+  ...prefix(umlMCQs, 'mcq'),
 ];
